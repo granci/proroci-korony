@@ -12,6 +12,11 @@ html {
   height: 100%;
 }
 
+/*.label {
+  max-width: 150px;
+  white-space: normal
+}*/
+
 .highcharts-data-table table {
 	font-family: Verdana, sans-serif;
 	border-collapse: collapse;

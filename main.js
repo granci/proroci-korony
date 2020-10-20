@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     legend: {
       align: 'left',
-      verticalAlign: 'top',
+      verticalAlign: 'bottom',
       borderWidth: 0
     },
 
@@ -91,7 +91,8 @@ document.addEventListener('DOMContentLoaded', function () {
                   y: e.pageY || e.clientY
                 },
                 headingText: this.series.name,
-                maincontentText: Highcharts.dateFormat('%A, %b %e, %Y', this.x),
+                //maincontentText: Highcharts.dateFormat('%A, %b %e, %Y', this.x),
+                maincontentText: this.x,
                 width: 200
               });
             }
@@ -106,24 +107,53 @@ document.addEventListener('DOMContentLoaded', function () {
           lineWidth: 1
         }
       }
-    },
+    }
+  };
 
-    // series: [{
-    //   name: 'All sessions',
-    //   lineWidth: 4,
-    //   marker: {
-    //     radius: 4
-    //   }
-    // }, {
-    //   name: 'New users'
-    // }]
-
+  function mkAnnos(quotes) {
+    var annos = [];
+    var colors = {
+      vedec: 'rgba(255, 204, 204, 0.75)',
+      politik: 'rgba(102, 204, 255, 0.75)',
+      konspirator: 'rgba(173, 235, 173, 0.75)',
+      influencer: 'rgba(221, 153, 255, 0.75)',
+    };
+    quotes.forEach(q => {
+      var anno = {
+        labelOptions: {
+          verticalAlign: 'bottom',
+          y: -15,
+          useHTML: true,
+        },
+        labels: [
+          {
+            point: {
+              xAxis: 0,
+              yAxis: 0,
+              x: new Date(q.date),
+              y: 5000 + Math.random() * 10000
+            },
+            backgroundColor: colors[q.tag] ? colors[q.tag] : 'rgba(200, 200, 200, 0.75)',
+            // overflow: 'justify',
+            // className: 'label',
+            text: '<div style="width: 150px; white-space: normal">"' + q.quote + '"</br><a href="' + q.link + '" target="_blank">- ' + q.name + '</a></div>'
+          }
+        ]
+      };
+      annos.push(anno);
+    });
+    return annos;
   };
 
   $.get(csvFile, function(csvData) {
+
     options.data.csv = csvData;
+    options.annotations = mkAnnos(quotes);
+
     var chart = Highcharts.chart('container', options);
+
     chart.setSize(undefined, screen.height * 0.8);
+
   });
 
 
