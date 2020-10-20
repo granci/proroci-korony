@@ -24,7 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
     },
 
     subtitle: {
-      text: 'Zdroj: mapa.covid.chat'
+      text: 'Chýba ti tvoj obľúbeny výrok? <a href="https://github.com/granci/proroci-korony/blob/main/quotes.js" target="_blank">Doplň ho!</a>'
+    },
+
+    caption: {
+      useHTML: true,
+      text: 'Zdroj dát: <a href="https://mapa.covid.chat/" target="_blank">mapa.covid.chat</a>'
     },
 
     xAxis: {
@@ -82,22 +87,21 @@ document.addEventListener('DOMContentLoaded', function () {
         selected: true,
         // showInLegend: true,
         cursor: 'pointer',
-        point: {
-          events: {
-            click: function (e) {
-              hs.htmlExpand(null, {
-                pageOrigin: {
-                  x: e.pageX || e.clientX,
-                  y: e.pageY || e.clientY
-                },
-                headingText: this.series.name,
-                //maincontentText: Highcharts.dateFormat('%A, %b %e, %Y', this.x),
-                maincontentText: this.x,
-                width: 200
-              });
-            }
-          }
-        },
+        // point: {
+        //   events: {
+        //     click: function (e) {
+        //       hs.htmlExpand(null, {
+        //         pageOrigin: {
+        //           x: e.pageX || e.clientX,
+        //           y: e.pageY || e.clientY
+        //         },
+        //         headingText: this.series.name,
+        //         maincontentText: this.x,
+        //         width: 200
+        //       });
+        //     }
+        //   }
+        // },
         events: {
           legendItemClick: function () {
             var visibility = this.visible ? 'visible' : 'hidden';
