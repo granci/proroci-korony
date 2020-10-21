@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
       text: 'Komentovaný denný vývoj pandámie Covid-19 na Slovensku'
     },
 
-    subtitle: {
-      text: 'Chýba ti tvoj obľúbeny výrok? <a href="https://github.com/granci/proroci-korony/blob/main/quotes.js" target="_blank">Doplň ho!</a>'
-    },
+    // subtitle: {
+    //   text: 'Chýba ti tvoj obľúbeny výrok? <a href="https://github.com/granci/proroci-korony/blob/main/quotes.js" target="_blank">Doplň ho!</a>'
+    // },
 
     caption: {
       useHTML: true,
-      text: 'Zdroj dát: <a href="https://mapa.covid.chat/" target="_blank">mapa.covid.chat</a>'
+      text: 'Chýba ti nejaký výrok? Doplň ho do repa: <a href="https://github.com/granci/proroci-korony/" target="_blank">github.com/granci/proroci-korony</a>'
     },
 
     xAxis: {
@@ -87,21 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
         selected: true,
         // showInLegend: true,
         cursor: 'pointer',
-        // point: {
-        //   events: {
-        //     click: function (e) {
-        //       hs.htmlExpand(null, {
-        //         pageOrigin: {
-        //           x: e.pageX || e.clientX,
-        //           y: e.pageY || e.clientY
-        //         },
-        //         headingText: this.series.name,
-        //         maincontentText: this.x,
-        //         width: 200
-        //       });
-        //     }
-        //   }
-        // },
         events: {
           legendItemClick: function () {
             var visibility = this.visible ? 'visible' : 'hidden';
@@ -114,20 +99,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  function mkAnnos(quotes) {
+  function mkAnnos(quotes, maxVal) {
     var annos = [];
     var colors = {
-      vedec: 'rgba(255, 204, 204, 0.75)',
-      politik: 'rgba(102, 204, 255, 0.75)',
-      konspirator: 'rgba(173, 235, 173, 0.75)',
-      influencer: 'rgba(221, 153, 255, 0.75)',
+      science: '255, 204, 204',
+      politics: '102, 204, 255,',
+      influencer: '173, 235, 173',
+      artist: '221, 153, 255',
     };
     quotes.forEach(q => {
+      var timestamp = new Date(q.date);
+      // console.log(timestamp);
       var anno = {
         labelOptions: {
           verticalAlign: 'bottom',
           y: -15,
           useHTML: true,
+          // shape: 'connector',
+          // align: 'right',
         },
         labels: [
           {
@@ -135,11 +124,11 @@ document.addEventListener('DOMContentLoaded', function () {
               xAxis: 0,
               yAxis: 0,
               x: new Date(q.date),
-              y: 5000 + Math.random() * 10000
+              y: 5000 + Math.random() * (maxVal - 5000)
             },
-            backgroundColor: colors[q.tag] ? colors[q.tag] : 'rgba(200, 200, 200, 0.75)',
+            backgroundColor: colors[q.tag] ? 'rgba(' + colors[q.tag] + ', 0.7)' : 'rgba(200, 200, 200, 0.7)',
+            // borderColor: colors[q.tag] ? 'rgb(' + colors[q.tag] + ')' : 'rgba(200, 200, 200)',
             // overflow: 'justify',
-            // className: 'label',
             text: '<div style="width: 150px; white-space: normal">"' + q.quote + '"</br><a href="' + q.link + '" target="_blank">- ' + q.name + '</a></div>'
           }
         ]
@@ -149,18 +138,21 @@ document.addEventListener('DOMContentLoaded', function () {
     return annos;
   };
 
+  function csvMaxVal(csvString) {
+    var csvArr = $.csv.toArrays(csvString, {separator: ';'});
+    var numArr = [].concat.apply([], csvArr).map(x => +x).filter(y => !Number.isNaN(y)); // converts 2d array to 1d numeric array
+    return Math.max(... numArr);
+  }
+
   $.get(csvFile, function(csvData) {
 
     options.data.csv = csvData;
-    options.annotations = mkAnnos(quotes);
+    options.annotations = mkAnnos(quotes, csvMaxVal(csvData));
 
     var chart = Highcharts.chart('container', options);
-
-    chart.setSize(undefined, screen.height * 0.8);
+    chart.setSize(undefined, window.innerHeight || document.documentElement.clientHeight);
 
   });
 
-
-  
 
 });
