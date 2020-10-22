@@ -1,13 +1,13 @@
 quotes['sr'] = [
 	{
-		name: 'Soňa Peková, virologička',
+		name: 'MUDr. Soňa Peková, virologička',
 		quote: 'Covid do Vánoc opravdu zmizí, výrazně zeslábl, je tu šílenství.',
 		date: '2020-10-06',
 		link: 'https://www.reflex.cz/clanek/rozhovory/103250/sona-pekova-covid-do-vanoc-opravdu-zmizi-vyrazne-zeslabl-je-tu-silenstvi-potvrzuje-se-ze-neni-z-prirody.html',
 		tag: 'scientist'
 	},
 	{
-		name: 'Soňa Peková, virologička',
+		name: 'MUDr. Soňa Peková, virologička',
 		quote: 'Druhá vlna nebude, za půl roku covid zmizí.',
 		date: '2020-06-03',
 		link: 'https://www.novinky.cz/koronavirus/clanek/pekova-druha-vlna-nebude-za-pul-roku-covid-zmizi-40326320',
@@ -42,10 +42,24 @@ quotes['sr'] = [
 		tag: 'polititian'
 	},
 	{
-		name: 'Peter Lipták, lekár ĽSNS',
+		name: 'MUDr. Peter Lipták, lekár ĽSNS',
 		quote: 'Je už dokázané, že žiadna epidémia na Slovensku a ani žiadna pandémia vo svete nebola.',
-		date: '2020-06-éč',
+		date: '2020-06-24',
 		link: 'https://liptakpeter.blog.pravda.sk/2020/06/04/preco-nenosit-ruska/',
+		tag: 'doctor'
+	},
+	{
+		name: 'MUDr. Vladimír Malec, PhD., onkológ',
+		quote: 'Koronavírus zabil tých, ktorých by zabila aj chrípka, proste senzitívnych ľudí. Vírus sa vyčerpáva a na ostatných nemá.',
+		date: '2020-08-24',
+		link: 'https://www.youtube.com/watch?v=2VBmD0Qn4Ho',
+		tag: 'doctor'
+	},
+	{
+		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Ide o trochu ťažšiu chrípku, pretože úmrtnosť na koronavírusovú infekciu je ani nie dvojnásobne väčšia, než na bežnú sezónnu chrípku.',
+		date: '2020-05-28',
+		link: 'https://www.youtube.com/watch?v=Q3xOV2-1DOY',
 		tag: 'doctor'
 	},
 ];

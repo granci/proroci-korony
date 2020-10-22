@@ -180,10 +180,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Split into key/value pairs
     queries = url.search.substring(1).split("&");
-    console.log(queries.length);
 
     if (queries.length > 1) {
-      console.log(queries);
+      
       // Convert the array of strings into an object
       for ( i = 0, l = queries.length; i < l; i++ ) {
           temp = queries[i].split('=');
