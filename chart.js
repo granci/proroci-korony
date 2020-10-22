@@ -125,8 +125,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function mkAnnos(quotes, maxVal, allowedTags) {
     var annos = [];
     var colors = {
-      science: '255, 204, 204',
-      politics: '102, 204, 255',
+      scientist: '255, 204, 204',
+      doctor: '255, 230, 179',
+      polititian: '102, 204, 255',
+      publicist: '230, 230, 0',
       influencer: '173, 235, 173',
       artist: '221, 153, 255',
       other: '200, 200, 200',

@@ -7,7 +7,7 @@ $(document).ready(function() {
   var queryParams = parseQueryString(window.location);
   // console.log(countries[queryParams.country]);
   var country = (countries[queryParams.country]) ? queryParams.country : 'sr';
-  var selectedLang = 'sk';
+  var selectedLang = countries[country];
 
   // set up internationalization:
   $('#sr').text(langs[selectedLang].country.sr);
@@ -18,8 +18,7 @@ $(document).ready(function() {
 
   // select country based on URL query:
   $('.nav-item#' + country).addClass('active');
-  setIframeSrc($('.nav-item.active').attr('id'));
-  // setIframeSrc(country);
+  setIframeSrc(country);
 
   $('.nav-item').on('click',function(){
     $('.nav-item').removeClass('active');
@@ -28,10 +27,6 @@ $(document).ready(function() {
   });  
 
   function setIframeSrc(country) {
-    // var countries = {
-    //   sr: 'sk',
-    //   cr: 'cz'
-    // }
     $('#chart').attr('src', 'chart.html?country=' + country + '&lang=' + countries[country]);
   };
 
