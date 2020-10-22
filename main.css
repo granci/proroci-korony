@@ -18,3 +18,16 @@ iframe {
  overflow-x: hidden;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
+.fb-root, .controls-container {
+  /*height: 100%; */
+  height: 0px;
+}
+
+.fb-share-button {
+  align: 'right';
+}
+

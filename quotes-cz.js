@@ -1,4 +1,4 @@
-quotes['cz'] = [
+quotes['cr'] = [
 	{
 		name: 'Soňa Peková, virologička',
 		quote: 'Covid do Vánoc opravdu zmizí, výrazně zeslábl, je tu šílenství.',

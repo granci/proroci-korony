@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 //$(document).ready(function() {
 
-  var csvFile = 'korona.gov.sk.csv';  // https://mapa.covid.chat/export/csv
-
   var options = {
     chart: {
       // height: '100%',
@@ -13,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     data: {
       // csvURL: 'https://mapa.covid.chat/export/csv',
-      itemDelimiter: ';',
+      // itemDelimiter: ';',
       beforeParse: function (csv) {
         return csv.replace(/\n\n/g, '\n');
       }
@@ -90,6 +88,40 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
+  var countryDefs = {
+    sr: {
+      csv: 'korona.gov.sk.csv',  // https://mapa.covid.chat/export/csv
+      delimiter: ';'
+    },
+    cr: {
+      csv: 'nakazeni-vyleceni-umrti-testy.csv',  // https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/nakazeni-vyleceni-umrti-testy.csv
+      delimiter: ','
+    },  
+  };
+  var queryParams = parseQueryString(window.location);
+  var country = (quotes[queryParams.country]) ? queryParams.country : 'sr';
+  var lang = (langs[queryParams.lang]) ? queryParams.lang : 'sk';
+  var endColumn = (country === 'cr') ? 3 : undefined;
+
+  $.get(countryDefs[country].csv, function(csvData) {
+
+    options.data.csv = csvData;
+    options.data.itemDelimiter = countryDefs[country].delimiter;
+    options.data.endColumn = endColumn;
+
+    // console.log(quotes, quotes[country]);
+    options.annotations = mkAnnos(quotes[country], csvMaxVal(csvData, countryDefs[country].delimiter, endColumn), queryParams.filter);
+    options.title = {
+      text: langs[lang].title + ' (' + langs[lang].country[country] + ')'
+    };
+    options.caption.text = langs[lang].addRepo + ': <a href="https://github.com/granci/proroci-korony/" target="_blank">github.com/granci/proroci-korony</a>'
+
+    var chart = Highcharts.chart('container', options);
+    // console.log(window.innerHeight, document.documentElement.clientHeight);
+    chart.setSize(undefined, window.innerHeight || document.documentElement.clientHeight);
+
+  });
+
   function mkAnnos(quotes, maxVal, allowedTags) {
     var annos = [];
     var colors = {
@@ -103,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!allowedTags || allowedTags.includes(q.tag) || allowedTags === q.tag) {
         var timestamp = new Date(q.date);
         var yAnchor = 5000 + Math.random() * (maxVal - 5000);
-        // console.log(yAnchor, q.name, colors[q.tag]);
+        // console.log(Date.parse(timestamp), q.date, colors[q.tag]);
         var anno = {
           labelOptions: {
             verticalAlign: 'bottom',
@@ -119,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
               point: {
                 xAxis: 0,
                 yAxis: 0,
-                x: new Date(q.date),
+                x: timestamp,
                 y: yAnchor
               },
               backgroundColor: colors[q.tag] ? 'rgba(' + colors[q.tag] + ', 0.7)' : 'rgba(' + colors.other + ', 0.7)',
@@ -134,9 +166,10 @@ document.addEventListener('DOMContentLoaded', function () {
     return annos;
   };
 
-  function csvMaxVal(csvString) {
-    var csvArr = $.csv.toArrays(csvString, {separator: ';'});
-    var numArr = [].concat.apply([], csvArr).map(x => +x).filter(y => !Number.isNaN(y)); // converts 2d array to 1d numeric array
+  function csvMaxVal(csvString, delimiter, endColumn) {
+    var csvArr = $.csv.toArrays(csvString, {separator: delimiter});
+    // console.log([].concat.apply([], csvArr.map(z => z.slice(0, z.length-1))));
+    var numArr = [].concat.apply([], csvArr.map(z => z.slice(0, z.length-1))).map(x => +x).filter(y => !Number.isNaN(y)); // converts 2d array to 1d numeric array
     return Math.max(... numArr);
   }
 
@@ -153,26 +186,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     return params;
-};
-
-  $.get(csvFile, function(csvData) {
-
-    var queryParams = parseQueryString(window.location);
-    var country = (quotes[queryParams.country]) ? queryParams.country : 'sk';
-
-    options.data.csv = csvData;
-    // console.log(quotes, quotes[country]);
-    options.annotations = mkAnnos(quotes[country], csvMaxVal(csvData), queryParams.filter);
-    options.title = {
-      text: langs[country].title
-    };
-    options.caption.text = langs[country].addRepo + ': <a href="https://github.com/granci/proroci-korony/" target="_blank">github.com/granci/proroci-korony</a>'
-
-    var chart = Highcharts.chart('container', options);
-    // console.log(window.innerHeight, document.documentElement.clientHeight);
-    chart.setSize(undefined, window.innerHeight || document.documentElement.clientHeight);
-
-  });
-
+  };
 
 });

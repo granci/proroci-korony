@@ -1,4 +1,4 @@
-quotes['sk'] = [
+quotes['sr'] = [
 	{
 		name: 'Soňa Peková, virologička',
 		quote: 'Covid do Vánoc opravdu zmizí, výrazně zeslábl, je tu šílenství.',
@@ -39,7 +39,7 @@ quotes['sk'] = [
 
 		name: 'Milan Mazúrek, poslanec ĽSNS',
 		quote: 'Nebudem si ničiť zdravie tou hnusnou handrou a dýchať vysoké koncentrácie vlastného co2.',
-		date: '2020-27-06',
+		date: '2020-06-27',
 		link: 'https://www.facebook.com/MilanMazurek.NRSR/posts/797211681049061',
 		tag: 'politics'
 	}
