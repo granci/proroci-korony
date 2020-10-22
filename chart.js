@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  function mkAnnos(quotes, maxVal) {
+  function mkAnnos(quotes, maxVal, allowedTags) {
     var annos = [];
     var colors = {
       science: '255, 204, 204',
@@ -109,34 +109,36 @@ document.addEventListener('DOMContentLoaded', function () {
       other: '200, 200, 200',
     };
     quotes.forEach(q => {
-      var timestamp = new Date(q.date);
-      var yAnchor = 5000 + Math.random() * (maxVal - 5000);
-      // console.log(yAnchor, q.name, colors[q.tag]);
-      var anno = {
-        labelOptions: {
-          verticalAlign: 'bottom',
-          y: -15,
-          useHTML: true,
-          allowOverlap: true,
-          overflow: 'justify',
-          // shape: 'connector',
-          // align: 'right',
-        },
-        labels: [
-          {
-            point: {
-              xAxis: 0,
-              yAxis: 0,
-              x: new Date(q.date),
-              y: yAnchor
-            },
-            backgroundColor: colors[q.tag] ? 'rgba(' + colors[q.tag] + ', 0.7)' : 'rgba(' + colors.other + ', 0.7)',
-            // borderColor: colors[q.tag] ? 'rgb(' + colors[q.tag] + ')' : 'rgba(' + colors.other + ')',
-            text: '<div style="width: 150px; white-space: normal">"' + q.quote + '"</br><a href="' + q.link + '" target="_blank">- ' + q.name + '</a></div>'
-          }
-        ]
-      };
-      annos.push(anno);
+      if (!allowedTags || allowedTags.includes(q.tag) || allowedTags === q.tag) {
+        var timestamp = new Date(q.date);
+        var yAnchor = 5000 + Math.random() * (maxVal - 5000);
+        // console.log(yAnchor, q.name, colors[q.tag]);
+        var anno = {
+          labelOptions: {
+            verticalAlign: 'bottom',
+            y: -15,
+            useHTML: true,
+            allowOverlap: true,
+            overflow: 'justify',
+            // shape: 'connector',
+            // align: 'right',
+          },
+          labels: [
+            {
+              point: {
+                xAxis: 0,
+                yAxis: 0,
+                x: new Date(q.date),
+                y: yAnchor
+              },
+              backgroundColor: colors[q.tag] ? 'rgba(' + colors[q.tag] + ', 0.7)' : 'rgba(' + colors.other + ', 0.7)',
+              // borderColor: colors[q.tag] ? 'rgb(' + colors[q.tag] + ')' : 'rgba(' + colors.other + ')',
+              text: '<div style="width: 150px; white-space: normal">"' + q.quote + '"</br><a href="' + q.link + '" target="_blank">- ' + q.name + '</a></div>'
+            }
+          ]
+        };
+        annos.push(anno);
+      }
     });
     return annos;
   };
@@ -147,10 +149,28 @@ document.addEventListener('DOMContentLoaded', function () {
     return Math.max(... numArr);
   }
 
+  function parseQueryString(url) {
+    var params = {}, queries, temp, i, l;
+
+    // Split into key/value pairs
+    queries = url.search.substring(1).split("&");
+
+    // Convert the array of strings into an object
+    for ( i = 0, l = queries.length; i < l; i++ ) {
+        temp = queries[i].split('=');
+        params[temp[0]] = (temp[1].indexOf(',') > -1) ? temp[1].split(',') : temp[1];
+    }
+
+    return params;
+};
+
   $.get(csvFile, function(csvData) {
 
+    var queryParams = parseQueryString(window.location);
+    var country = (quotes[queryParams.country]) ? queryParams.country : 'sk';
+
     options.data.csv = csvData;
-    options.annotations = mkAnnos(quotes['sk'], csvMaxVal(csvData));
+    options.annotations = mkAnnos(quotes[country], csvMaxVal(csvData), queryParams.filter);
 
     var chart = Highcharts.chart('container', options);
     chart.setSize(undefined, window.innerHeight || document.documentElement.clientHeight);
