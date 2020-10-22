@@ -19,17 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
 
-    title: {
-      text: 'Komentovaný denný vývoj pandámie Covid-19 na Slovensku'
-    },
-
-    // subtitle: {
-    //   text: 'Chýba ti tvoj obľúbeny výrok? <a href="https://github.com/granci/proroci-korony/blob/main/quotes.js" target="_blank">Doplň ho!</a>'
-    // },
-
     caption: {
       useHTML: true,
-      text: 'Chýba ti nejaký výrok? Doplň ho do repa: <a href="https://github.com/granci/proroci-korony/" target="_blank">github.com/granci/proroci-korony</a>'
     },
 
     xAxis: {
@@ -170,9 +161,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var country = (quotes[queryParams.country]) ? queryParams.country : 'sk';
 
     options.data.csv = csvData;
+    // console.log(quotes, quotes[country]);
     options.annotations = mkAnnos(quotes[country], csvMaxVal(csvData), queryParams.filter);
+    options.title = {
+      text: langs[country].title
+    };
+    options.caption.text = langs[country].addRepo + ': <a href="https://github.com/granci/proroci-korony/" target="_blank">github.com/granci/proroci-korony</a>'
 
     var chart = Highcharts.chart('container', options);
+    // console.log(window.innerHeight, document.documentElement.clientHeight);
     chart.setSize(undefined, window.innerHeight || document.documentElement.clientHeight);
 
   });
