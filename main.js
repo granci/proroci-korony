@@ -33,16 +33,19 @@ $(document).ready(function() {
   function parseQueryString(url) {
     var params = {}, queries, temp, i, l;
 
-    // Split into key/value pairs
+    /// Split into key/value pairs
     queries = url.search.substring(1).split("&");
 
-    // Convert the array of strings into an object
-    for ( i = 0, l = queries.length; i < l; i++ ) {
-        temp = queries[i].split('=');
-        params[temp[0]] = (temp[1].indexOf(',') > -1) ? temp[1].split(',') : temp[1];
-    }
+    if (queries.length > 1) {
+      
+      // Convert the array of strings into an object
+      for ( i = 0, l = queries.length; i < l; i++ ) {
+          temp = queries[i].split('=');
+          params[temp[0]] = (temp[1].indexOf(',') > -1) ? temp[1].split(',') : temp[1];
+      }
 
-    return params;
+      return params;
+    } else return {};
   };
 
 });
