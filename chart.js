@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 //$(document).ready(function() {
 
-  var csvFile = 'korona.gov.sk.csv';
+  var csvFile = 'korona.gov.sk.csv';  // https://mapa.covid.chat/export/csv
 
   var options = {
     chart: {
@@ -103,18 +103,22 @@ document.addEventListener('DOMContentLoaded', function () {
     var annos = [];
     var colors = {
       science: '255, 204, 204',
-      politics: '102, 204, 255,',
+      politics: '102, 204, 255',
       influencer: '173, 235, 173',
       artist: '221, 153, 255',
+      other: '200, 200, 200',
     };
     quotes.forEach(q => {
       var timestamp = new Date(q.date);
-      // console.log(timestamp);
+      var yAnchor = 5000 + Math.random() * (maxVal - 5000);
+      // console.log(yAnchor, q.name, colors[q.tag]);
       var anno = {
         labelOptions: {
           verticalAlign: 'bottom',
           y: -15,
           useHTML: true,
+          allowOverlap: true,
+          overflow: 'justify',
           // shape: 'connector',
           // align: 'right',
         },
@@ -124,11 +128,10 @@ document.addEventListener('DOMContentLoaded', function () {
               xAxis: 0,
               yAxis: 0,
               x: new Date(q.date),
-              y: 5000 + Math.random() * (maxVal - 5000)
+              y: yAnchor
             },
-            backgroundColor: colors[q.tag] ? 'rgba(' + colors[q.tag] + ', 0.7)' : 'rgba(200, 200, 200, 0.7)',
-            // borderColor: colors[q.tag] ? 'rgb(' + colors[q.tag] + ')' : 'rgba(200, 200, 200)',
-            // overflow: 'justify',
+            backgroundColor: colors[q.tag] ? 'rgba(' + colors[q.tag] + ', 0.7)' : 'rgba(' + colors.other + ', 0.7)',
+            // borderColor: colors[q.tag] ? 'rgb(' + colors[q.tag] + ')' : 'rgba(' + colors.other + ')',
             text: '<div style="width: 150px; white-space: normal">"' + q.quote + '"</br><a href="' + q.link + '" target="_blank">- ' + q.name + '</a></div>'
           }
         ]
@@ -147,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
   $.get(csvFile, function(csvData) {
 
     options.data.csv = csvData;
-    options.annotations = mkAnnos(quotes, csvMaxVal(csvData));
+    options.annotations = mkAnnos(quotes['sk'], csvMaxVal(csvData));
 
     var chart = Highcharts.chart('container', options);
     chart.setSize(undefined, window.innerHeight || document.documentElement.clientHeight);
