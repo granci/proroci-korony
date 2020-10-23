@@ -28,7 +28,7 @@ quotes['sr'] = [
 		tag: 'polititian'
 	},
 	{
-		name: 'Vladimír Krčméry, hlavný hygienik SR',
+		name: 'Prof. MUDr. Vladimír Krčméry DrSc., infektológ',
 		quote: 'Druhá vlna príde zrejme už teraz, ak ju zvládneme, v septembri by sa život mohol vrátiť do normálu.',
 		date: '2020-05-04',
 		link: 'https://www.aktuality.sk/clanok/787642/krcmery-druha-vlna-pride-zrejme-uz-teraz-ak-ju-zvladneme-v-septembri-by-sa-zivot-mohol-vratit-do-normalu-podcast',
