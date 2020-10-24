@@ -5,6 +5,7 @@ var langs = {
 		country: {
 			sr: 'Slovakia',
 			cr: 'Czech republic',
+			us: 'United States',
 		},
 	},
 	sk: {
@@ -13,6 +14,7 @@ var langs = {
 		country: {
 			sr: 'Slovensko',
 			cr: 'Česká republika',
+			us: 'Spojené Štáty',
 		},
 	},
 	cz: {
@@ -21,6 +23,7 @@ var langs = {
 		country: {
 			sr: 'Slovensko',
 			cr: 'Česká republika',
+			us: 'Spojené Státy',
 		},
 	}
 }

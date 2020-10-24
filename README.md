@@ -1,15 +1,19 @@
-# Proroci korony
+# Corona prophets
 
-projektik, co sa snazi zachytit v case komentare o korone ktore sa moc nepodarili (podla tejto [predlohy](https://www.facebook.com/utheraptor/photos/a.238176063377369/914537269074575)).
+A simple static HTML project which tries to summarize quotes about corona pandemic that didn't age well. The idea came from [this FB post](https://www.facebook.com/utheraptor/photos/a.238176063377369/914537269074575)).
 
-## Vlozenie do vlastnej stranky
-graf mozno lubovolne sirit a vlozit do vlastnej stranky ako iframe (vid pouzitie v index.html), v jeho src mozno zadefinovat nepovinne query parametre:
- * country - povolene hodnoty 'sr', 'cr' (default 'sr')
- * lang - povolene hodnoty 'en', 'sk', 'cz' (default 'sk')
- * filter - ciarkou oddelne kategorie vyrokov podla kluca tag v premennej quotes v quotes-sk.js a quotes-cz.js (default zobrazi vsetky)
+## Embeding to your website
+The chart can be embeded to your website as a iframe:
 
-## Dalsi vyvoj
-budem velmi rad ak mi s tym pomozete, treba hlavne:
-1. doplnit dalsie relevantne hlasky - pridat objekty do suborov quotes-sk.js a quotes-cz.js
-2. napojenie na zive data so statistikami (nevedel som si poradit s CORS pri statickej stranke)
-3. vyladit vzhlad
+`<iframe id="chart" src="https://granci.github.io/proroci-korony/chart/?country=sr&lang=sk" ></iframe>`
+
+In the src you can use these parameters:
+ * country - allowed values: 'us', sr', 'cr' (default 'sr')
+ * lang - allowed values: 'en', 'sk', 'cz' (default 'sk')
+ * filter - comma-separated tag of the quote type as defined in 'quotes' folder (default displays all the quotes)
+
+## Additional development
+As you can see, the project is not very advanced yet. You can help to make it better:
+1. add more relevant quotes by adding more objects to the files in 'quotes' folder (such as 'quotes-sk.js')
+2. connect to live corona data (I've failed with CORS on the static website)
+3. tune up UX

@@ -90,11 +90,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var countryDefs = {
     sr: {
-      csv: 'korona.gov.sk.csv',  // https://mapa.covid.chat/export/csv
+      csv: 'data/korona.gov.sk.csv',  // https://mapa.covid.chat/export/csv
       delimiter: ';'
     },
     cr: {
-      csv: 'nakazeni-vyleceni-umrti-testy.csv',  // https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/nakazeni-vyleceni-umrti-testy.csv
+      csv: 'data/nakazeni-vyleceni-umrti-testy.csv',  // https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/nakazeni-vyleceni-umrti-testy.csv
+      delimiter: ','
+    },
+    us: {
+      csv: 'data/nakazeni-vyleceni-umrti-testy.csv',  // https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/nakazeni-vyleceni-umrti-testy.csv
       delimiter: ','
     },  
   };
@@ -125,9 +129,9 @@ document.addEventListener('DOMContentLoaded', function () {
   function mkAnnos(quotes, maxVal, allowedTags) {
     var annos = [];
     var colors = {
-      scientist: '255, 204, 204',
+      scientist: '102, 204, 255',
       doctor: '255, 230, 179',
-      polititian: '102, 204, 255',
+      polititian: '255, 204, 204',
       publicist: '230, 230, 0',
       influencer: '173, 235, 173',
       artist: '221, 153, 255',
@@ -181,16 +185,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // Split into key/value pairs
     queries = url.search.substring(1).split("&");
 
-    if (queries.length > 1) {
-      
-      // Convert the array of strings into an object
-      for ( i = 0, l = queries.length; i < l; i++ ) {
+    // Convert the array of strings into an object
+    for ( i = 0, l = queries.length; i < l; i++ ) {
+        if (queries[i].indexOf('=') > -1) {
           temp = queries[i].split('=');
           params[temp[0]] = (temp[1].indexOf(',') > -1) ? temp[1].split(',') : temp[1];
-      }
+        }
+    }
 
-      return params;
-    } else return {};
+    return params;
 
   };
 

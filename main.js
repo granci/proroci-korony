@@ -2,12 +2,14 @@ $(document).ready(function() {
 
   var countries = {
     sr: 'sk',
-    cr: 'cz'
+    cr: 'cz',
+    us: 'en',
   }
   var queryParams = parseQueryString(window.location);
-  // console.log(countries[queryParams.country]);
+  console.log(queryParams, countries[queryParams.country]);
   var country = (countries[queryParams.country]) ? queryParams.country : 'sr';
-  var selectedLang = countries[country];
+  // var selectedLang = countries[country];
+  var selectedLang = (langs[queryParams.lang]) ? queryParams.lang : 'countries[country]';
 
   // set up internationalization:
   $('#sr').text(langs[selectedLang].country.sr);
@@ -27,25 +29,24 @@ $(document).ready(function() {
   });  
 
   function setIframeSrc(country) {
-    $('#chart').attr('src', 'chart.html?country=' + country + '&lang=' + countries[country]);
+    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + countries[country]);
   };
 
   function parseQueryString(url) {
     var params = {}, queries, temp, i, l;
 
-    /// Split into key/value pairs
+    // Split into key/value pairs
     queries = url.search.substring(1).split("&");
 
-    if (queries.length > 1) {
-      
-      // Convert the array of strings into an object
-      for ( i = 0, l = queries.length; i < l; i++ ) {
+    // Convert the array of strings into an object
+    for ( i = 0, l = queries.length; i < l; i++ ) {
+        if (queries[i].indexOf('=') > -1) {
           temp = queries[i].split('=');
           params[temp[0]] = (temp[1].indexOf(',') > -1) ? temp[1].split(',') : temp[1];
-      }
+        }
+    }
 
-      return params;
-    } else return {};
+    return params;
   };
 
 });
