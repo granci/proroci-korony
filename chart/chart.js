@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
       delimiter: ','
     },
     us: {
-      csv: 'data/nakazeni-vyleceni-umrti-testy.csv',  // https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/nakazeni-vyleceni-umrti-testy.csv
+      csv: 'data/us.csv',  // https://github.com/nytimes/covid-19-data/blob/master/us.csv
       delimiter: ','
     },  
   };

@@ -9,7 +9,7 @@ $(document).ready(function() {
   console.log(queryParams, countries[queryParams.country]);
   var country = (countries[queryParams.country]) ? queryParams.country : 'sr';
   // var selectedLang = countries[country];
-  var selectedLang = (langs[queryParams.lang]) ? queryParams.lang : 'countries[country]';
+  var selectedLang = (langs[queryParams.lang]) ? queryParams.lang : countries[country];
 
   // set up internationalization:
   $('#sr').text(langs[selectedLang].country.sr);

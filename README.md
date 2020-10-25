@@ -5,7 +5,7 @@ A simple static HTML project which tries to summarize quotes about corona pandem
 ## Embeding to your website
 The chart can be embeded to your website as a iframe:
 
-`<iframe id="chart" src="https://granci.github.io/proroci-korony/chart/?country=sr&lang=sk" ></iframe>`
+`<iframe rc="https://granci.github.io/proroci-korony/chart/?country=sr&lang=sk" ></iframe>`
 
 In the src you can use these parameters:
  * country - allowed values: 'us', sr', 'cr' (default 'sr')
@@ -16,4 +16,4 @@ In the src you can use these parameters:
 As you can see, the project is not very advanced yet. You can help to make it better:
 1. add more relevant quotes by adding more objects to the files in 'quotes' folder (such as 'quotes-sk.js')
 2. connect to live corona data (I've failed with CORS on the static website)
-3. tune up UX
+3. tune up UX (chart, menu, etc.)
