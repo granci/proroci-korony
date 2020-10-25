@@ -7,6 +7,10 @@ var langs = {
 			cr: 'Czech republic',
 			us: 'USA',
 		},
+		series: {
+			deaths: 'Total number of deaths',
+			cases: 'Daily increase of cases',
+		},
 	},
 	sk: {
 		title:'Komentovaný denný vývoj pandémie Covid-19',
@@ -16,6 +20,10 @@ var langs = {
 			cr: 'Česká republika',
 			us: 'USA',
 		},
+		series: {
+			deaths: 'Celkový počet úmrtí',
+			cases: 'Denný prírastok prípadov',
+		},
 	},
 	cz: {
 		title:'Komentovaný denní vývoj pandemie Covid-19',
@@ -24,6 +32,10 @@ var langs = {
 			sr: 'Slovensko',
 			cr: 'Česká republika',
 			us: 'USA',
+		},
+		series: {
+			deaths: 'Celkový počet úmrtí',
+			cases: 'Denní přírastek případú',
 		},
 	}
 }

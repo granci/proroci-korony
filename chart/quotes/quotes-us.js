@@ -43,13 +43,6 @@ quotes['us'] = [
 	},
 	{
 		name: 'Donald Trump, US president',
-		quote: "And then I see the disinfectant, where it knocks it out in a minute.. and is there a way you can do something like, by injection, inside, or almost a cleaning...",
-		date: '2020-04-23',
-		link: 'https://www.c-span.org/video/?c4871173/president-trump-injecting-disinfectants#',
-		tag: 'polititian'
-	},
-	{
-		name: 'Donald Trump, US president',
 		quote: "I said to my people ‘slow the testing down please.’",
 		date: '2020-06-20',
 		link: 'https://www.forbes.com/sites/andrewsolender/2020/06/20/trump-claims-he-instructed-his-team-to-slow-down-coronavirus-testing/#1c3d3af86a93',

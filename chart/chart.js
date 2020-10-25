@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var options = {
     chart: {
-      // height: '100%',
       scrollablePlotArea: {
         minWidth: 700
       }
@@ -22,13 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
     },
 
     xAxis: {
-      tickInterval: 7 * 24 * 3600 * 1000, // one week
+      tickInterval: 4 * 7 * 24 * 3600 * 1000, // one week
+      // startOnTick: true,
       tickWidth: 0,
       gridLineWidth: 1,
       labels: {
         align: 'left',
         x: 3,
-        y: -3
+        y: -3,
+        formatter: function () {
+            return Highcharts.dateFormat('%b', this.value);
+        }
       }
     },
 
@@ -105,16 +108,25 @@ document.addEventListener('DOMContentLoaded', function () {
   var queryParams = parseQueryString(window.location);
   var country = (quotes[queryParams.country]) ? queryParams.country : 'sr';
   var lang = (langs[queryParams.lang]) ? queryParams.lang : 'sk';
-  var endColumn = (country === 'cr') ? 3 : undefined;
+  // var endColumn = (country === 'cr') ? 3 : undefined;
 
   $.get(countryDefs[country].csv, function(csvData) {
 
-    options.data.csv = csvData;
-    options.data.itemDelimiter = countryDefs[country].delimiter;
-    options.data.endColumn = endColumn;
+    var parsedCsv = parseCsv(csvData, countryDefs[country].delimiter);
+    // console.log(parsedCsv);
+    var dailyCsv = addDaily(parsedCsv);
+    // console.log(dailyCsv);
+    var adjustedCsv = adjustCsvArr(dailyCsv, country, lang);
+    // console.log(adjustedCsv);
 
-    // console.log(quotes, quotes[country]);
-    options.annotations = mkAnnos(quotes[country], csvMaxVal(csvData, countryDefs[country].delimiter, endColumn), queryParams.filter);
+
+    options.data.csv = $.csv.fromArrays(adjustedCsv);
+    // options.data.csv = csvData;
+    options.data.itemDelimiter = ',';
+    // options.data.itemDelimiter = countryDefs[country].delimiter;
+    // options.data.endColumn = endColumn;
+
+    options.annotations = mkAnnos(quotes[country], arrayMaxVal(adjustedCsv), queryParams.filter);
     options.title = {
       text: langs[lang].title + ' (' + langs[lang].country[country] + ')'
     };
@@ -140,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
     quotes.forEach(q => {
       if (!allowedTags || allowedTags.includes(q.tag) || allowedTags === q.tag) {
         var timestamp = new Date(q.date);
-        var yAnchor = 5000 + Math.random() * (maxVal - 5000);
+        var yAnchor = Math.random() * maxVal;
         // console.log(Date.parse(timestamp), q.date, colors[q.tag]);
         var anno = {
           labelOptions: {
@@ -171,6 +183,46 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     return annos;
   };
+
+  function parseCsv (csvString, delimiter) {
+    var csvArr = $.csv.toArrays(csvString, {separator: delimiter});
+    var numArr = csvArr.map(x => x.map(y => {
+      if (!Number.isNaN(+y)) return +y;
+      else return y;
+    }));
+    return numArr;
+  }
+
+  function addDaily(csvArr) {
+    for (i = 0; i < csvArr.length; i++) {
+      csvArr[i].forEach((val, j) => {
+        if (j > 0) {
+          if (i === 0 && j > 0) csvArr[i].push(val + '_daily');
+          else if (i === 1 && j > 0) csvArr[i].push(val);
+          else csvArr[i].push(csvArr[i][j] - csvArr[i-1][j]);
+        }
+      });
+    }
+    return csvArr;
+  }
+
+  function adjustCsvArr(csvArr, country, lang) {
+    var skipColumns = [1, 2];
+    var columns = {
+      cases: { sr: 5, cr: 5, us: 3 },
+      daths: { sr: 6, cr: 3, us: 2 }
+    }
+    var filtered = csvArr.map(x => x.filter((y, i, arr) => (i === 0 || i === columns.cases[country] || i === columns.daths[country])));
+    if (country === 'sr') filtered = filtered.map(x => ([x[0], x[1], x[2]] = [x[0], x[2], x[1]]));
+    filtered[0][1] = langs[lang].series.deaths;
+    filtered[0][2] = langs[lang].series.cases;
+    return filtered;
+  }
+
+  function arrayMaxVal(csvArr) {
+    var numArr = [].concat.apply([], csvArr).map(x => +x).filter(y => !Number.isNaN(y)); // converts 2d array to 1d numeric array
+    return Math.max(... numArr);
+  }
 
   function csvMaxVal(csvString, delimiter, endColumn) {
     var csvArr = $.csv.toArrays(csvString, {separator: delimiter});
