@@ -6,14 +6,14 @@ $(document).ready(function() {
     us: 'en',
   }
   var queryParams = parseQueryString(window.location);
-  console.log(queryParams, countries[queryParams.country]);
   var country = (countries[queryParams.country]) ? queryParams.country : 'sr';
   // var selectedLang = countries[country];
   var selectedLang = (langs[queryParams.lang]) ? queryParams.lang : countries[country];
 
   // set up internationalization:
-  $('#sr').text(langs[selectedLang].country.sr);
-  $('#cr').text(langs[selectedLang].country.cr);
+  Object.keys(countries).forEach(key => {
+    $('#' + key).text(langs[selectedLang].country[key]);
+  });
 
   // set up chart height
   $('.chart-container').height(window.innerHeight - $('.navbar').outerHeight());

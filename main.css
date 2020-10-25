@@ -31,3 +31,8 @@ iframe {
   align: 'right';
 }
 
+.logo {
+ /* padding-top: 0px;
+  padding-bottom: 0px;*/
+  margin-right: 1rem;
+}
