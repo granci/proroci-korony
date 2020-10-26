@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
 
+    navigation: {
+      buttonOptions: {
+        enabled: false
+      }
+    },
+
     data: {
       // csvURL: 'https://mapa.covid.chat/export/csv',
       // itemDelimiter: ';',
@@ -28,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       labels: {
         align: 'left',
         x: 3,
-        y: -3,
+        y: 12,
         formatter: function () {
             return Highcharts.dateFormat('%b', this.value);
         }
@@ -93,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var countryDefs = {
     sr: {
-      csv: 'data/korona.gov.sk.csv',  // https://mapa.covid.chat/export/csv
+      csv: 'data/korona.gov.sk.csv',  // https://korona.gov.sk/koronavirus-na-slovensku-v-cislach/
       delimiter: ';'
     },
     cr: {
@@ -151,6 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     quotes.forEach(q => {
       if (!allowedTags || allowedTags.includes(q.tag) || allowedTags === q.tag) {
+        // console.log(q);
         var timestamp = new Date(q.date);
         var yAnchor = Math.random() * maxVal;
         // console.log(Date.parse(timestamp), q.date, colors[q.tag]);

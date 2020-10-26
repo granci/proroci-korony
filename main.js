@@ -7,29 +7,37 @@ $(document).ready(function() {
   }
   var queryParams = parseQueryString(window.location);
   var country = (countries[queryParams.country]) ? queryParams.country : 'sr';
-  // var selectedLang = countries[country];
   var selectedLang = (langs[queryParams.lang]) ? queryParams.lang : countries[country];
-
-  // set up internationalization:
-  Object.keys(countries).forEach(key => {
-    $('#' + key).text(langs[selectedLang].country[key]);
-  });
 
   // set up chart height
   $('.chart-container').height(window.innerHeight - $('.navbar').outerHeight());
 
-  // select country based on URL query:
+  // select country based on URL query and internationalization:
   $('.nav-item#' + country).addClass('active');
-  setIframeSrc(country);
+  setIframeSrc(country, selectedLang);
+  setI18n();
 
-  $('.nav-item').on('click',function(){
-    $('.nav-item').removeClass('active');
+  // allign langs right
+  if ($('.navbar-toggler').css('display') == 'none') $('.navbar-right').addClass('right');
+  else $('.navbar-right').removeClass('right');
+
+  // change country
+  $('.country').on('click',function(){
+    $('.country').removeClass('active');
     $(this).addClass('active');
-    setIframeSrc($(this).attr('id')); 
+    country = $(this).attr('id');
+    setIframeSrc(country, selectedLang);
+  });
+
+  // change lang
+  $('.lang').on('click',function(){
+    selectedLang = $(this).attr('id');
+    setI18n();
+    setIframeSrc(country, selectedLang);
   });  
 
-  function setIframeSrc(country) {
-    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + countries[country]);
+  function setIframeSrc(country, lang) {
+    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + lang);
   };
 
   function parseQueryString(url) {
@@ -47,6 +55,13 @@ $(document).ready(function() {
     }
 
     return params;
+  };
+
+  function setI18n() {
+    Object.keys(countries).forEach(key => {
+      $('#' + key).text(langs[selectedLang].country[key]);
+    });
+    $('#navbarDropdownMenuLink').text(langs[selectedLang].lang);
   };
 
 });

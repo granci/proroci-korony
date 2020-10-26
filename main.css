@@ -36,3 +36,11 @@ iframe {
   padding-bottom: 0px;*/
   margin-right: 1rem;
 }
+
+.right {
+	/*display: flex;*/
+	/*float: right;*/
+	position: absolute;
+	right: 16px;
+	top: 8px;
+}
