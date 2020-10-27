@@ -1,6 +1,10 @@
-# Corona prophets
+# Covidology
 
-A simple static HTML project which tries to summarize quotes about corona pandemic that didn't age well. The idea came from [this FB post](https://www.facebook.com/utheraptor/photos/a.238176063377369/914537269074575)).
+A simple static HTML project which tries to summarize quotes about corona pandemic that didn't age well. The idea came from [this FB post](https://www.facebook.com/utheraptor/photos/a.238176063377369/914537269074575)). The page is deployed on [my domain](http://covidology.granci.com/)).
+
+## Technology
+ * Bootstrap 4
+ * jQuery 3
 
 ## Embeding to your website
 The chart can be embeded to your website as a iframe:

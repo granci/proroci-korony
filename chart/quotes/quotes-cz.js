@@ -14,10 +14,17 @@ quotes['cr'] = [
 		tag: 'scientist'
 	},
 	{
-		name: 'MUDr. Martin Balík, anesteziolog',
+		name: 'Doc. MUDr. Martin Balík, Ph.D, anesteziolog',
 		quote: 'Jsme na vrcholu pandemie.',
 		date: '2020-10-10',
 		link: 'https://www.blesk.cz/clanek/zpravy-koronavirus/657927/jsme-na-vrcholu-pandemie-lekar-ktery-zachranil-taxikare-se-nejvic-boji-zavrenych-skol.html',
+		tag: 'doctor'
+	},
+		{
+		name: 'Doc. MUDr. Martin Balík, Ph.D, anesteziolog',
+		quote: 'Lidi jsme strašně vystrašili. Testujeme tisíce lidí denně, stojí to tři čtvrtě miliardy měsíčně a výsledkem je 71 pacientů v těžkém stavu.',
+		date: '2020-09-17',
+		link: 'https://video.aktualne.cz/dvtv/balik-pacienti-v-tezkem-stavu-maji-az-extremni-rozmery-lidi/r~6651d1a2f86211eab0f60cc47ab5f122/',
 		tag: 'doctor'
 	},
 	{
@@ -71,15 +78,22 @@ quotes['cr'] = [
 	},
 	{
 		name: 'Prof. MUDr. Jan Pirk, DrSc, kardiolog',
+		quote: 'Situace není vážná, nakažený neznamená nemocný. Promoření je cesta.',
+		date: '2020-09-18',
+		link: 'https://www.expres.cz/celebrity/jan-pirk-koronavirus-promoreni-rozhovor.A200918_154146_dx-celebrity_ren',
+		tag: 'doctor'
+	},
+	{
+		name: 'Prof. MUDr. Jan Pirk, DrSc, kardiolog',
 		quote: 'Koronavirus není sranda, už bych ho nezlehčoval. Jen hlupák nemění názory.',
 		date: '2020-03-18',
 		link: 'https://denikn.cz/317831/koronavirus-neni-sranda-uz-bych-ho-nezlehcoval-jen-hlupak-nemeni-nazory-priznava-z-karanteny-profesor-pirk/',
 		tag: 'doctor'
 	},
 	{
-		name: 'MUDr. Jiří Votruba, plicní specialista',
-		quote: 'Jde o obvyklou, někdy trochu víc nepříjemnou virózu.',
-		date: '2020-06-26',
+		name: 'MUDr. Jiří Votruba, Ph.D, plicní specialista',
+		quote: 'Vnitřně mě udivuje, jaký humbuk toto onemocnění u nás i ve světě vyvolalo. Z hlediska medicínského totiž nic moc.',
+		date: '2020-07-21',
 		link: 'https://www.reflex.cz/clanek/rozhovory/102113/drasticka-opatreni-kvuli-covid-19-zpusobila-horsi-ztraty-nez-samotna-nemoc-rika-doktor-jiri-votruba.html',
 		tag: 'doctor'
 	},
@@ -98,6 +112,20 @@ quotes['cr'] = [
 		tag: 'polititian'
 	},
 	{
+		name: 'Prof. Jan Žaloudík, senátor (ČSSD) a onkolog',
+		quote: 'Roušky škodí, nebojím se covidu, ale kroků vlády.',
+		date: '2020-08-20',
+		link: 'https://www.reflex.cz/clanek/prostor-x/102500/profesor-zaloudik-rousky-skodi-nebojim-se-covidu-ale-kroku-vlady-v-zarouskovane-spolecnosti-zit-nechci.html',
+		tag: 'polititian'
+	},
+	{
+		name: 'Prof. Jan Žaloudík, senátor (ČSSD) a onkolog',
+		quote: 'Kdo moc testuje, najde moc nakažených.',
+		date: '2020-08-15',
+		link: 'https://www.irozhlas.cz/zpravy-domov/zaloudik-spicak-koronavirus-v-cesku_2009151613_pj',
+		tag: 'polititian'
+	},
+	{
 		name: 'MUDr. Roman Šmucler, lékař',
 		quote: 'Covid zvládáme famózně, roušky epidemii jen prodlouží a zhorší, lidi zemřou stejně.',
 		date: '2020-09-10',
@@ -110,5 +138,89 @@ quotes['cr'] = [
 		date: '2020-09-17',
 		link: 'https://www.frekvence1.cz/audio-video?porad=zaznamy-poradu&clanek=jan-hnizdil-to-neni-epidemie-koronaviru-to-je-epidemie-strachu-a-manipulace-s-fakty',
 		tag: 'doctor'
+	},
+	{
+		name: 'Prof. MUDr. Jiří Beran, CSc., epidemiolog',
+		quote: 'Nová opatření jsou zbytečná a přehnaná. Umírá násobně méně lidí než na jaře.',
+		date: '2020-07-23',
+		link: 'https://video.aktualne.cz/dvtv/beran-nova-opatreni-jsou-zbytecna-a-prehnana-umira-nasobne-m/r~2da93ab4cd0811ea80e60cc47ab5f122/',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Jiří Beran, CSc., epidemiolog',
+		quote: 'Nepřehánějme opatření, covid zabíjí méně než chřipka.',
+		date: '2020-08-18',
+		link: 'https://www.idnes.cz/zpravy/domaci/koronavirus-v-cesku-epidemiolog-jiri-beran-rousky-skoly-karantena-pet-dni.A200818_101547_domaci_chtl',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Jiří Beneš, CSc., přednosta kliniky',
+		quote: 'Podle našich dosavadních epidemiologických údajů se koronavirus chová v podstatě stejně jako chřipka, dokonce možná mírněji.',
+		date: '2020-08-11',
+		link: 'https://www.reflex.cz/clanek/rozhovory/102783/vetsi-mnozstvi-pozitivnich-testu-u-zdrave-populace-neni-nic-spatneho-rika-profesor-jiri-benes.html',
+		tag: 'doctor'
+	},
+	{
+		name: 'Prof. RNDr. Ladislav Dušek, Ph.D, statistik',
+		quote: 'Koronavirus si show už nezaslouží, citelně zeslábl, na koronavirus jsme ještě mnohem lépe připraveni, než jsme byli v březnu.',
+		date: '2020-08-26',
+		link: 'https://zpravy.aktualne.cz/domaci/koronaviru-dochazi-v-cesku-dech-snad-mu-to-vydrzi-i-na-podzi/r~d828b1b6e79f11ea842f0cc47ab5f122/',
+		tag: 'scientist'
+	},
+	{
+		name: 'MUDr. Hana Roháčová, Ph.D, primářka',
+		quote: 'Reprodukční číslo 1,59 není až tak vysoké, protože na začátku se uvádělo 2,5 až 3, takže bylo ještě vyšší, míst v nemocnicích je dost.',
+		date: '2020-09-16',
+		link: 'https://www.blesk.cz/clanek/zpravy-koronavirus/655567/reprodukcni-cislo-neni-tak-vysoke-mist-v-nemocnicich-je-dost-tvrdi-primarka-zminila-i-chripku.html',
+		tag: 'doctor'
+	},
+	{
+		name: 'MUDr. Miroslava Skovajsová, Ph.D, pedagožka',
+		quote: 'Nošení roušek je opatření, které nám už nic nepřináší, jenom strasti.',
+		date: '2020-05-11',
+		link: 'https://video.aktualne.cz/dvtv/rousky-nepomohly-ke-zvladnuti-epidemie-vadi-mi-prinasi-jen-s/r~05d69fb691a511eaa6f6ac1f6b220ee8/',
+		tag: 'scientist'
+	},
+	{
+		name: 'MUDr. Martin Jan Stránský, neurolog',
+		quote: 'Zavádějí se masová omezení, příšerné a nefunkční karantény, které nemají smysl.',
+		date: '2020-03-03',
+		link: 'https://www.blesk.cz/clanek/zpravy-koronavirus/636380/prazdne-regaly-a-masova-omezeni-stihla-nas-epidemie-hysterie-mini-expert-na-lidsky-mozek.html',
+		tag: 'doctor'
+	},
+	{
+		name: 'Prof. Ing. Stanislav Kmoch, CSc., vedoucí laboratoře',
+		quote: 'Žádná virová epidemie v historii netrvala déle než tři měsíce. Nestrašme se pořád covidem.',
+		date: '2020-06-15',
+		link: 'https://www.reflex.cz/clanek/rozhovory/101550/zadna-virova-epidemie-v-historii-netrvala-dele-nez-tri-mesice-rika-profesor-stanislav-kmoch.html',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. RNDr. Miroslav Červinka, CSc., vědec',
+		quote: 'Nejde o katastrofu, koronavirus je jen jedna z dalších viróz kolem nás.',
+		date: '2020-03-07',
+		link: 'https://radiozurnal.rozhlas.cz/nejde-o-katastrofu-koronavirus-je-jedna-z-dalsich-viroz-kolem-nas-rika-odbornik-8159581',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
+		quote: 'Vadí mi neustálé koronavirové strašení. Hlavně nepanikařit a vrátit život do normálních kolejí.',
+		date: '2020-08-24',
+		link: 'https://www.tomaszima.cz/media/vysoke-skolstvi/vadi-mi-neustale-koronavirove-straseni/',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
+		quote: 'Nechápu, na co vláda s rozvolňováním čeká. Na koronavirus jsme už připraveni.',
+		date: '2020-04-09',
+		link: 'https://domaci.ihned.cz/c1-66748740-nechapu-na-co-dal-vlada-stale-ceka-na-koronavirus-uz-jsme-pripraveni-tvrdi-rektor-uk-zima',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
+		quote: 'Mladí umírají i na chřipku, o mrtvých na koronavirus se mluví příliš, jejich počtům nevěřím.',
+		date: '2020-04-16',
+		link: 'https://www.reflex.cz/clanek/prostor-x/100782/profesor-zima-mladi-umiraji-i-na-chripku-o-mrtvych-na-koronavirus-se-mluvi-prilis-jejich-poctum-neverim.html',
+		tag: 'scientist'
 	},
 ];

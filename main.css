@@ -38,9 +38,11 @@ iframe {
 }
 
 .right {
-	/*display: flex;*/
-	/*float: right;*/
 	position: absolute;
 	right: 16px;
+}
+
+.top {
+	position: absolute;
 	top: 8px;
 }
