@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var countryDefs = {
     sr: {
-      csv: 'data/korona.gov.sk.csv',  // https://korona.gov.sk/koronavirus-na-slovensku-v-cislach/
+      csv: 'data/korona.gov.sk.csv',  // https://korona.gov.sk/koronavirus-na-slovensku-v-cislach/ https://mapa.covid.chat/export/csv
       delimiter: ';'
     },
     cr: {
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
       delimiter: ','
     },
     us: {
-      csv: 'data/us.csv',  // https://github.com/nytimes/covid-19-data/blob/master/us.csv
+      csv: 'data/us.csv',  // https://raw.githubusercontent.com/nytimes/covid-19-data/master/us.csv
       delimiter: ','
     },  
   };
