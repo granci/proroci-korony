@@ -1,6 +1,6 @@
 # Covidology
 
-A simple static HTML project which tries to summarize quotes about corona pandemic that didn't age well. The idea came from [this FB post](https://www.facebook.com/utheraptor/photos/a.238176063377369/914537269074575)). The page is deployed on [my domain](http://covidology.granci.com/)).
+A simple static HTML project which tries to summarize quotes about corona pandemic that didn't age well. The idea came from [this FB post](https://www.facebook.com/utheraptor/photos/a.238176063377369/914537269074575)). The page is deployed [here](http://covidology.granci.com/)).
 
 ## Technology
  * Bootstrap 4
@@ -9,7 +9,7 @@ A simple static HTML project which tries to summarize quotes about corona pandem
 ## Embeding to your website
 The chart can be embeded to your website as a iframe:
 
-`<iframe rc="https://granci.github.io/proroci-korony/chart/?country=sr&lang=sk" ></iframe>`
+`<iframe rc="http://covidology.granci.com/chart/?country=sr&lang=sk" ></iframe>`
 
 In the src you can use these parameters:
  * `country` - allowed values: `us`, `sr`, `cr` (default `sr`)

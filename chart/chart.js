@@ -114,23 +114,17 @@ document.addEventListener('DOMContentLoaded', function () {
   var queryParams = parseQueryString(window.location);
   var country = (quotes[queryParams.country]) ? queryParams.country : 'sr';
   var lang = (langs[queryParams.lang]) ? queryParams.lang : 'sk';
-  // var endColumn = (country === 'cr') ? 3 : undefined;
 
   $.get(countryDefs[country].csv, function(csvData) {
 
     var parsedCsv = parseCsv(csvData, countryDefs[country].delimiter);
-    // console.log(parsedCsv);
     var dailyCsv = addDaily(parsedCsv);
-    // console.log(dailyCsv);
     var adjustedCsv = adjustCsvArr(dailyCsv, country, lang);
-    // console.log(adjustedCsv);
 
 
     options.data.csv = $.csv.fromArrays(adjustedCsv);
     // options.data.csv = csvData;
     options.data.itemDelimiter = ',';
-    // options.data.itemDelimiter = countryDefs[country].delimiter;
-    // options.data.endColumn = endColumn;
 
     options.annotations = mkAnnos(quotes[country], arrayMaxVal(adjustedCsv), queryParams.filter);
     options.title = {
@@ -139,24 +133,24 @@ document.addEventListener('DOMContentLoaded', function () {
     options.caption.text = langs[lang].addRepo + ': <a href="https://github.com/granci/proroci-korony/" target="_blank">github.com/granci/proroci-korony</a>'
 
     var chart = Highcharts.chart('container', options);
-    // console.log(window.innerHeight, document.documentElement.clientHeight);
     chart.setSize(undefined, window.innerHeight || document.documentElement.clientHeight);
 
   });
 
-  function mkAnnos(quotes, maxVal, allowedTags) {
+  function mkAnnos(quotes, maxVal, filteredTags) {
     var annos = [];
     var colors = {
       scientist: '102, 204, 255',
       doctor: '255, 230, 179',
       polititian: '255, 204, 204',
       publicist: '230, 230, 0',
-      influencer: '173, 235, 173',
+      conspirator: '173, 235, 173',
       artist: '221, 153, 255',
       other: '200, 200, 200',
     };
     quotes.forEach(q => {
-      if (!allowedTags || allowedTags.includes(q.tag) || allowedTags === q.tag) {
+      // if (!q.tag || Object.keys(colors).indexOf(q.tag) === -1) q.tag = 'other';
+      if (!filteredTags || filteredTags.includes(q.tag) || filteredTags === q.tag) {
         // console.log(q);
         var timestamp = new Date(q.date);
         var yAnchor = Math.random() * maxVal;
@@ -179,6 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 x: timestamp,
                 y: yAnchor
               },
+              // backgroundColor: 'rgba(' + colors[q.tag] + ', 0.7)',
               backgroundColor: colors[q.tag] ? 'rgba(' + colors[q.tag] + ', 0.7)' : 'rgba(' + colors.other + ', 0.7)',
               // borderColor: colors[q.tag] ? 'rgb(' + colors[q.tag] + ')' : 'rgba(' + colors.other + ')',
               text: '<div style="width: 150px; white-space: normal">"' + q.quote + '"</br><a href="' + q.link + '" target="_blank">- ' + q.name + '</a></div>'

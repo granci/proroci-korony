@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   // select country based on URL query and internationalization:
   $('.nav-item#' + country).addClass('active');
-  setIframeSrc(country, selectedLang);
+  setIframeSrc(country, selectedLang, getFilter());
   setI18n();
 
   // allign langs right
@@ -26,18 +26,31 @@ $(document).ready(function() {
     $('.country').removeClass('active');
     $(this).addClass('active');
     country = $(this).attr('id');
-    setIframeSrc(country, selectedLang);
+    setIframeSrc(country, selectedLang, getFilter());
   });
 
   // change lang
   $('.lang').on('click',function(){
     selectedLang = $(this).attr('id');
     setI18n();
-    setIframeSrc(country, selectedLang);
-  });  
+    setIframeSrc(country, selectedLang, getFilter());
+  });
 
-  function setIframeSrc(country, lang) {
-    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + lang);
+  // change filter
+  $('input[name="filter"]').on('click',function(){
+    setIframeSrc(country, selectedLang, getFilter());
+  });
+
+  function getFilter() {
+    var filter = [];
+    $('input[name="filter"]').each(function() {
+      if (this.checked) filter.push(this.value);
+    });
+    return filter.join(',');
+  };
+
+  function setIframeSrc(country, lang, filter) {
+    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + lang + '&filter=' + filter);
   };
 
   function parseQueryString(url) {
@@ -61,7 +74,8 @@ $(document).ready(function() {
     Object.keys(countries).forEach(key => {
       $('#' + key).text(langs[selectedLang].country[key]);
     });
-    $('#navbarDropdownMenuLink').text(langs[selectedLang].lang);
+    $('#langDropdown').text(langs[selectedLang].lang);
+    ['polititian', 'scientist', 'doctor', 'other'].forEach(f => $('label[for=' + f + ']').text(langs[selectedLang].filter[f]));
   };
 
 });

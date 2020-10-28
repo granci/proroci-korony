@@ -12,6 +12,12 @@ var langs = {
 			cases: 'Daily increase of cases',
 		},
 		lang: 'Language',
+		filter: {
+			polititian: 'Polititians',
+			scientist: 'Scientists',
+			doctor: 'Doctors',
+			other: 'Others',
+		},
 	},
 	sk: {
 		title:'Komentovaný denný vývoj pandémie Covid-19',
@@ -26,6 +32,12 @@ var langs = {
 			cases: 'Denný prírastok prípadov',
 		},
 		lang: 'Jazyk',
+		filter: {
+			polititian: 'Politici',
+			scientist: 'Vedci',
+			doctor: 'Doktori',
+			other: 'Ostatní',
+		},
 	},
 	cz: {
 		title:'Komentovaný denní vývoj pandemie Covid-19',
@@ -40,5 +52,11 @@ var langs = {
 			cases: 'Denní přírastek případú',
 		},
 		lang: 'Jazyk',
+		filter: {
+			polititian: 'Politici',
+			scientist: 'Vědci',
+			doctor: 'Doktoři',
+			other: 'Ostatní',
+		},
 	}
 }
