@@ -20,13 +20,13 @@ quotes['sr'] = [
 		link: 'https://www.youtube.com/watch?v=sqik_dZy6lI',
 		tag: 'polititian'
 	},
-	// {
-	// 	name: 'Marián Kotleba, poslanec ĽSNS',
-	// 	quote: 'Ak by vám vláda a médiá každý deň netlačili zo všetkých strán NEOVERITEĽNÉ informácie o korone, počte vraj nakazených, vraj mŕtvych, nových testoch a ďalšej propagande okolo toho, vedeli by ste o nejakej vraj pandémii?',
-	// 	date: '2020-10-06',
-	// 	link: 'https://www.facebook.com/Kotlebaofficialfanpage/posts/155189186265390',
-	// 	tag: 'polititian'
-	// },
+	{
+		name: 'Marián Kotleba, poslanec ĽSNS',
+		quote: 'Ak by vám vláda a médiá každý deň netlačili zo všetkých strán NEOVERITEĽNÉ informácie o korone, počte vraj nakazených, vraj mŕtvych, nových testoch a ďalšej propagande okolo toho, vedeli by ste o nejakej vraj pandémii?',
+	 	date: '2020-10-06',
+	 	link: 'https://www.facebook.com/Kotlebaofficialfanpage/posts/155189186265390',
+	 	tag: 'polititian'
+	},
 	{
 		name: 'Marián Kotleba, poslanec ĽSNS',
 		quote: 'Priatelia, takže včera som bol na teste a dnes prišiel výsledok. POZITÍVNY!',
