@@ -2,8 +2,8 @@ html {
  overflow: auto;
  /*min-height: 100%;*/
 }
- 
-html, body, div, iframe {
+
+html, body, iframe {
  margin: 0px; 
  padding: 0px; 
  height: 100%; 
@@ -18,7 +18,7 @@ iframe {
  overflow-x: hidden;
 }
 
-.nav-link {
+.nav-link, .dropdown-item, .form-check-label {
   cursor: pointer;
 }
 
@@ -39,10 +39,6 @@ iframe {
 
 .right {
 	position: absolute;
-	right: 24px;
+	right: 96px;
 }
 
-.top {
-	position: absolute;
-	top: 8px;
-}

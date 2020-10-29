@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Covidology</title>
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name='viewport' content='width=device-width'>
+  		<meta property="og:url"           content="http://covidology.granci.com/" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="Covidology" />
+		<meta property="og:description"   content="A science of Covid-19 prediction" />
+		<meta property="og:image"         content="http://covidology.granci.com/img/corona.png" />
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-53L5197ERT"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -9,15 +18,6 @@
 
 		  gtag('config', 'G-53L5197ERT');
 		</script>
-		<title>Covidology</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<meta name='viewport' content='width=device-width'>
-  		<meta property="og:title" content="Covidology" />
-  		<meta property="og:url"           content="http://covidology.granci.com/" />
-		<meta property="og:type"          content="website" />
-		<meta property="og:title"         content="Covidology" />
-		<meta property="og:description"   content="A science of Covid-19 prediction" />
-		<meta property="og:image"         content="http://covidology.granci.com/img/corona.png" />
   		<link rel="stylesheet" href="main.css">
   		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> -->
   		<link rel="stylesheet" href="bootstrap-4.0.0.min.css">
@@ -29,11 +29,11 @@
 		<script src="main.js"></script>
 	</head>
 	<body>
+		<div id="fb-root" class="fb-root"></div>
 		<div class="container-fluid">
-			<div id="fb-root" class="fb-root"></div>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			  	<img class="logo" src="img/corona.png" alt="Corona virus" width="40" height="40">
-			  <button class="navbar-toggler right top" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -41,15 +41,18 @@
 			      <li class="country nav-item nav-link" id="sr">SR</li>
 			      <li class="country nav-item nav-link" id="cr">CR</li>
 			      <li class="country nav-item nav-link" id="us">USA</li>
-			      <li class="nav-item dropdown">
+			  </ul>
+			  <ul class="navbar-nav navbar-right right">
+			  	<li class="nav-item nav-link">
+				  <div class="fb-share-button" data-href="https://granci.github.io/proroci-korony/" data-layout="button_count" data-size="small">
+				    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://granci.github.io/proroci-korony/&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"/>
+				  </div>
+			    </li>
+			  	<li class="nav-item dropdown">
 			        <a class="nav-link dropdown-toggle" href="#" id="filterDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			          Filter
 			        </a>
 			        <div class="dropdown-menu" aria-labelledby="filterDropdown">
-			          <a class="dropdown-item" >
-			          	<input type="checkbox" class="form-check-input" name="filter" value="polititian" id="polititian" checked>
-    					<label class="form-check-label" for="polititian">polititian</label>
-			          </a>
 			          <a class="dropdown-item" >
 			          	<input type="checkbox" class="form-check-input" name="filter" value="scientist" id="scientist" checked>
     					<label class="form-check-label" for="scientist">scientist</label>
@@ -59,23 +62,20 @@
     					<label class="form-check-label" for="doctor">doctor</label>
 			          </a>
 			          <a class="dropdown-item" >
+			          	<input type="checkbox" class="form-check-input" name="filter" value="polititian" id="polititian" checked>
+    					<label class="form-check-label" for="polititian">polititian</label>
+			          </a>
+			          <a class="dropdown-item" >
 			          	<input type="checkbox" class="form-check-input" name="filter" value="publicist,conspirator,artist,other" id="other" checked>
     					<label class="form-check-label" for="other">other</label>
 			          </a>
 			        </div>
 			      </li>
-			      <li class="nav-item nav-link">
-				      <div class="fb-share-button" data-href="https://granci.github.io/proroci-korony/" data-layout="button_count" data-size="small">
-				      	<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://granci.github.io/proroci-korony/&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"/>
-				      </div>
-			      </li>
-			  </ul>
-			  <ul class="navbar-nav navbar-right right">
 			      <li class="nav-item dropdown">
 			        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			          Lang
 			        </a>
-			        <div class="dropdown-menu" aria-labelledby="langDropdown">
+			        <div class="dropdown-menu navbar-right right" aria-labelledby="langDropdown">
 			          <a class="lang dropdown-item" id="sk">Slovensky</a>
 			          <a class="lang dropdown-item" id="cz">Česky</a>
 			          <a class="lang dropdown-item" id="en">English</a>
@@ -83,21 +83,6 @@
 			      </li>
 			  	</ul>
 			  </div>
-			  <!-- <div class="collapse navbar-collapse navbar-right right" id="navbarNavDropdown">
-
-			    <ul class="navbar-nav">
-			      <li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          Lang
-			        </a>
-			        <div class="dropdown-menu" aria-labelledby="langDropdown">
-			          <a class="lang dropdown-item" id="sk">Slovensky</a>
-			          <a class="lang dropdown-item" id="cz">Česky</a>
-			          <a class="lang dropdown-item" id="en">English</a>
-			        </div>
-			      </li>
-			    </ul>
-			  </div> -->
 			</nav>
 			<div class="chart-container">
 				<iframe id="chart" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" scrolling="auto"></iframe>
