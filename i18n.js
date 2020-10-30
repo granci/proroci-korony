@@ -13,10 +13,12 @@ var langs = {
 		},
 		lang: 'Language',
 		filter: {
-			polititian: 'Polititians',
+			polititian: 'Polititian',
 			scientist: 'Scientists',
 			doctor: 'Doctors',
 			other: 'Others',
+			republican: 'Republicans',
+			democrat: 'Democrats',
 		},
 	},
 	sk: {
@@ -37,6 +39,8 @@ var langs = {
 			scientist: 'Vedci',
 			doctor: 'Doktori',
 			other: 'Ostatní',
+			republican: 'Republikáni',
+			democrat: 'Demokrati',
 		},
 	},
 	cz: {
@@ -57,6 +61,8 @@ var langs = {
 			scientist: 'Vědci',
 			doctor: 'Doktoři',
 			other: 'Ostatní',
+			republican: 'Republikani',
+			democrat: 'Demokrati',
 		},
 	}
 }

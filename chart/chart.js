@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var options = {
     chart: {
       scrollablePlotArea: {
-        minWidth: 700
+        minWidth: 1000
       }
     },
 
@@ -121,12 +121,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var dailyCsv = addDaily(parsedCsv);
     var adjustedCsv = adjustCsvArr(dailyCsv, country, lang);
 
-
     options.data.csv = $.csv.fromArrays(adjustedCsv);
-    // options.data.csv = csvData;
     options.data.itemDelimiter = ',';
 
-    options.annotations = mkAnnos(quotes[country], arrayMaxVal(adjustedCsv), queryParams.filter);
+    options.annotations = mkAnnos(sortQuotes(quotes[country]), arrayMaxVal(adjustedCsv), queryParams.filter);
     options.title = {
       text: langs[lang].title + ' (' + langs[lang].country[country] + ')'
     };
@@ -137,31 +135,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
   });
 
+  function sortQuotes(quotes) {
+    return quotes.sort((a, b) => new Date(a.date) - new Date(b.date));
+  }
+
   function mkAnnos(quotes, maxVal, filteredTags) {
     var annos = [];
     var colors = {
-      scientist: '102, 204, 255',
-      doctor: '255, 230, 179',
+      doctor: '102, 204, 255',
+      scientist: '255, 230, 179',
       polititian: '255, 204, 204',
+      republican: '255,173,175',
+      democrat: '153,161,228',
       publicist: '230, 230, 0',
       conspirator: '173, 235, 173',
       artist: '221, 153, 255',
       other: '200, 200, 200',
     };
+    // get approximate height of the annotation buble in chart values:
+    var intervalHeight = 120 / (window.innerHeight || document.documentElement.clientHeight) * maxVal;
+    var numYintervals = Math.floor(maxVal / intervalHeight);
+    // console.log(numYintervals, maxVal);
+    var yInterval = 0;
     quotes.forEach(q => {
       // if (!q.tag || Object.keys(colors).indexOf(q.tag) === -1) q.tag = 'other';
       if (!filteredTags || filteredTags.includes(q.tag) || filteredTags === q.tag) {
-        // console.log(q);
+        if (yInterval === numYintervals + 1) yInterval = 0;
         var timestamp = new Date(q.date);
-        var yAnchor = Math.random() * maxVal;
-        // console.log(Date.parse(timestamp), q.date, colors[q.tag]);
+        // var yAnchor = Math.random() * maxVal;
+        var yAnchor = intervalHeight * yInterval;
+        yInterval += 1;
         var anno = {
+          zIndex: yInterval + 5,
+          events: {
+            click: function(e) { 
+              console.log("Annotation clicked:", this); 
+              // this.options.labels[0].backgroundColor = colors[q.tag] ? 'rgb(' + colors[q.tag] + ')' : 'rgb(' + colors.other + ')';
+            }
+          },
           labelOptions: {
             verticalAlign: 'bottom',
             y: -15,
             useHTML: true,
             allowOverlap: true,
             overflow: 'justify',
+            accessibility: {
+              description: '"' + q.quote + '" - ' + q.name
+            },
             // shape: 'connector',
             // align: 'right',
           },
