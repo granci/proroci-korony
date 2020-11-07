@@ -1,5 +1,47 @@
 quotes['sr'] = [
 	{
+		name: 'Jozef Banáš, publicista',
+		quote: 'Situácia s koronavírusom je vážna, zdá sa, že bude ešte vážnejšia.',
+		date: '2020-03-19',
+		link: 'https://www.facebook.com/banas.jozo/posts/2712533132192568',
+		tag: 'publicist'
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: 'Dodnes nikto nevysvetlil v čom spočíva nebezpečenstvo koronavírusu.',
+		date: '2020-06-24',
+		link: 'https://www.facebook.com/banas.jozo/posts/2940654959380383',
+		tag: 'publicist'
+	},
+	{
+		name: 'Gustáv Murín',
+		quote: 'Každá takáto pandémia sa zjavuje na jar a trápi nás do prvých horúcich letných dní, kedy sama „vyhasne“.',
+		date: '2020-06-15',
+		link: 'https://gumurin.blog.pravda.sk/2020/06/15/korona-pandemia-ako-globalny-experiment/',
+		tag: 'publicist'
+	},
+	{
+		name: 'Miroslav Čajka, kňaz ĽSNS',
+		quote: 'Nedovoľte jej [chorobe koronaviru], aby vás ovládala. Nebuďte z nej vystrašení.',
+		date: '2020-10-06',
+		link: 'https://www.facebook.com/miroslav.cajka.946/posts/2700695476869981',
+		tag: 'other'
+	},
+	{
+		name: 'Miroslav Čajka, kňaz ĽSNS',
+		quote: 'Mám veľmi silný zápal pľúc. Hrozia mi aj vážne dôsledky. Prosím o modlitby.',
+		date: '2020-10-19',
+		link: 'https://www.facebook.com/miroslav.cajka.946/posts/2712037379069124',
+		tag: 'other'
+	},
+	{
+		name: 'Dag Daniš, novinár',
+		quote: 'Náreky o "strate kontroly" a "hrozbe nezvládnuteľlného preťaženia nemocníc" sú poplašné správy. Nie kvalifikované prognózy.',
+		date: '2020-09-25',
+		link: 'https://www.facebook.com/dag.danis/posts/2706889962882758',
+		tag: 'publicist'
+	},
+	{
 		name: 'Ľuboš Blaha, poslanec Smer',
 		quote: 'Matovič v mene koronavíru ešte dnes, keď už je jasné, že epidémia je preč, terorizuje Slovensko, straší ľudí...',
 		date: '2020-06-08',
@@ -55,18 +97,32 @@ quotes['sr'] = [
 		link: 'https://www.dobrenoviny.sk/c/189872/nevesty-dobre-bude-odkazuje-matovic-co-sa-chysta-urobit-',
 		tag: 'polititian'
 	},
-	// {
-	// 	name: 'Igor Matovič, premiér SR',
-	// 	quote: 'Pokazili sme si to.',
-	// 	date: '2020-09-25',
-	// 	link: 'https://www.tvnoviny.sk/koronavirus/2008354_matovic-pokazili-sme-si-to-vo-stvrtok-pribudlo-rekordnych-419-nakazenych',
-	// 	tag: 'polititian'
-	// },
+	{
+		name: 'Igor Matovič, premiér SR',
+		quote: 'Pokazili sme si to.',
+		date: '2020-09-25',
+		link: 'https://www.tvnoviny.sk/koronavirus/2008354_matovic-pokazili-sme-si-to-vo-stvrtok-pribudlo-rekordnych-419-nakazenych',
+		tag: 'polititian'
+	},
+	{
+		name: 'Prof. MUDr. Vladimír Krčméry DrSc., infektológ',
+		quote: 'Koronavírus zvládneme. Už v máji sa vrátime k bežnému životu.',
+		date: '2020-03-18',
+		link: 'https://www.trend.sk/spravy/krcmery-koronavirus-zvladneme-maji-vratime-beznemu-zivotu',
+		tag: 'scientist'
+	},
 	{
 		name: 'Prof. MUDr. Vladimír Krčméry DrSc., infektológ',
 		quote: 'Druhá vlna príde zrejme už teraz, ak ju zvládneme, v septembri by sa život mohol vrátiť do normálu.',
 		date: '2020-05-04',
 		link: 'https://www.aktuality.sk/clanok/787642/krcmery-druha-vlna-pride-zrejme-uz-teraz-ak-ju-zvladneme-v-septembri-by-sa-zivot-mohol-vratit-do-normalu-podcast',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Vladimír Krčméry DrSc., infektológ',
+		quote: 'Príchod druhej vlny koronavírusu u nás dramaticky nepocítime.',
+		date: '2020-05-06',
+		link: 'https://www.webnoviny.sk/vzdravotnictve/prichod-druhej-vlny-koronavirusu-dramaticky-nepocitime-odhaduje-profesor-krcmery/',
 		tag: 'scientist'
 	},
 	{
@@ -95,6 +151,20 @@ quotes['sr'] = [
 		quote: 'Ide o trochu ťažšiu chrípku, pretože úmrtnosť na koronavírusovú infekciu je ani nie dvojnásobne väčšia, než na bežnú sezónnu chrípku.',
 		date: '2020-05-28',
 		link: 'https://www.youtube.com/watch?v=Q3xOV2-1DOY',
+		tag: 'doctor'
+	},
+	{
+		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Prosím, prestaňte nás strašiť a zanedbávať verejné zdravie.',
+		date: '2020-08-13',
+		link: 'https://www.youtube.com/watch?v=lx6RKf0uZFU&feature=emb_logo&ab_channel=Dr.IgorBukovsk%C3%BD%E2%80%93AKV',
+		tag: 'doctor'
+	},
+	{
+		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
+		quote: 'Zrušte ďalšie reštrikčné opatrenia v súvislosti s koronavírom, ohrozuje zdravie ľudí viac, než samotný vírus.',
+		date: '2020-10-06',
+		link: 'https://www.facebook.com/viliam.fischer.501/posts/175008620821912',
 		tag: 'doctor'
 	},
 ];

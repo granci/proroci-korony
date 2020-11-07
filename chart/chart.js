@@ -97,6 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
+  // start local server: sudo systemctl start apache2
+
   var countryDefs = {
     sr: {
       csv: 'data/korona.gov.sk.csv',  // https://korona.gov.sk/koronavirus-na-slovensku-v-cislach/ https://mapa.covid.chat/export/csv
@@ -147,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
       polititian: '255, 204, 204',
       republican: '255,173,175',
       democrat: '153,161,228',
-      publicist: '230, 230, 0',
+      publicist: '140, 217, 140',
       conspirator: '173, 235, 173',
       artist: '221, 153, 255',
       other: '200, 200, 200',
