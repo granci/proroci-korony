@@ -14,7 +14,7 @@ quotes['sr'] = [
 		tag: 'publicist'
 	},
 	{
-		name: 'Gustáv Murín',
+		name: 'Gustáv Murín, publicista',
 		quote: 'Každá takáto pandémia sa zjavuje na jar a trápi nás do prvých horúcich letných dní, kedy sama „vyhasne“.',
 		date: '2020-06-15',
 		link: 'https://gumurin.blog.pravda.sk/2020/06/15/korona-pandemia-ako-globalny-experiment/',
@@ -35,10 +35,24 @@ quotes['sr'] = [
 		tag: 'other'
 	},
 	{
-		name: 'Dag Daniš, novinár',
+		name: 'Dag Daniš, novinový komentátor',
 		quote: 'Náreky o "strate kontroly" a "hrozbe nezvládnuteľlného preťaženia nemocníc" sú poplašné správy. Nie kvalifikované prognózy.',
 		date: '2020-09-25',
 		link: 'https://www.facebook.com/dag.danis/posts/2706889962882758',
+		tag: 'publicist'
+	},
+	{
+		name: 'Dag Daniš, novinový komentátor',
+		quote: 'Denne tu máme bublifuk o náraste "pozitívne testovaných". Tento údaj pritom nie je podstatný. Kľúčové by mali byť reporty o počte CHORÝCH.',
+		date: '2020-09-15',
+		link: 'https://www.facebook.com/dag.danis/posts/2698155950422826',
+		tag: 'publicist'
+	},
+	{
+		name: 'Dag Daniš, novinový komentátor',
+		quote: 'Strašenie ľudí o vysokých počtoch "pozitívne testovaných" zaberá. Mnohí sa cítia ohrození.',
+		date: '2020-09-17',
+		link: 'https://www.facebook.com/dag.danis/posts/2699920873579667',
 		tag: 'publicist'
 	},
 	{
@@ -166,5 +180,12 @@ quotes['sr'] = [
 		date: '2020-10-06',
 		link: 'https://www.facebook.com/viliam.fischer.501/posts/175008620821912',
 		tag: 'doctor'
+	},
+	{
+		name: 'Dr. Ing. Robert Mistrík, vedec',
+		quote: 'HNUSOBU SME ZASTAVILI',
+		date: '2020-06-12',
+		link: 'https://www.facebook.com/Mistrik2019/posts/733889744033672',
+		tag: 'scientist'
 	},
 ];
