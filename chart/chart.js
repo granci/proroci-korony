@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var queryParams = parseQueryString(window.location);
   var country = (quotes[queryParams.country]) ? queryParams.country : 'sr';
   var lang = (langs[queryParams.lang]) ? queryParams.lang : 'sk';
+  var overlap = (queryParams.overlap === 'false') ? false : true;
 
   $.get(countryDefs[country].csv, function(csvData) {
 
@@ -126,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
     options.data.csv = $.csv.fromArrays(adjustedCsv);
     options.data.itemDelimiter = ',';
 
-    options.annotations = mkAnnos(sortQuotes(quotes[country]), arrayMaxVal(adjustedCsv), queryParams.filter);
+    options.annotations = mkAnnos(sortQuotes(quotes[country]), arrayMaxVal(adjustedCsv), queryParams.filter, overlap);
     options.title = {
       text: langs[lang].title + ' (' + langs[lang].country[country] + ')'
     };
@@ -141,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return quotes.sort((a, b) => new Date(a.date) - new Date(b.date));
   }
 
-  function mkAnnos(quotes, maxVal, filteredTags) {
+  function mkAnnos(quotes, maxVal, filteredTags, allowOverlap) {
     var annos = [];
     var colors = {
       doctor: '102, 204, 255',
@@ -182,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
             verticalAlign: 'bottom',
             y: -15,
             useHTML: true,
-            allowOverlap: true,
+            allowOverlap: allowOverlap,
             overflow: 'justify',
             accessibility: {
               description: '"' + q.quote + '" - ' + q.name

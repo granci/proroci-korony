@@ -43,6 +43,11 @@ $(document).ready(function() {
     setIframeSrc(country, selectedLang, getFilter());
   });
 
+  // change overlap
+  $('input[name="overlap"]').on('click',function(){
+    setIframeSrc(country, selectedLang, getFilter());
+  });
+
   function getFilter() {
     var filter = [];
     $('input[name="filter"]').each(function() {
@@ -52,7 +57,7 @@ $(document).ready(function() {
   };
 
   function setIframeSrc(country, lang, filter) {
-    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + lang + '&filter=' + filter);
+    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + lang + '&filter=' + filter + '&overlap=' + $('#overlap').prop('checked').toString());
   };
 
   function parseQueryString(url) {
@@ -89,6 +94,7 @@ $(document).ready(function() {
     });
     $('#langDropdown').text(langs[selectedLang].lang);
     ['polititian', 'scientist', 'doctor', 'other', 'republican', 'democrat'].forEach(f => $('label[for=' + f + ']').text(langs[selectedLang].filter[f]));
+    $('label[for=overlap]').text(langs[selectedLang].overlap);
   };
 
 });
