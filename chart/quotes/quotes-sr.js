@@ -175,6 +175,13 @@ quotes['sr'] = [
 		tag: ['doctor', 'bukovsky']
 	},
 	{
+		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Ako inak to [neoficiálnych pacientov] môžeme zistiť ako nejakým plošným, ako nejakým vzorovým otestovaním_',
+		date: '2020-03-23',
+		link: 'https://www.youtube.com/watch?v=ElxjRl21Oes&ab_channel=Dr.IgorBukovsk%C3%BD%E2%80%93AKV',
+		tag: ['doctor', 'bukovsky']
+	},
+	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Zrušte ďalšie reštrikčné opatrenia v súvislosti s koronavírom, ohrozuje zdravie ľudí viac, než samotný vírus.',
 		date: '2020-10-06',

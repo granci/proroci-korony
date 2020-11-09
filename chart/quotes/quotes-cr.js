@@ -175,6 +175,13 @@ quotes['cr'] = [
 		tag: 'doctor'
 	},
 	{
+		name: 'MUDr. Hana Roháčová, Ph.D, primářka',
+		quote: 'Nemá žádný smysl strašit lidi tím, že budeme dopředu říkat, že to nezvládneme.',
+		date: '2020-10-25',
+		link: 'https://www.novinky.cz/domaci/clanek/nedesme-lidi-covid-zvladame-rekla-primarka-infekcniho-oddeleni-bulovky-40340297',
+		tag: 'doctor'
+	},
+	{
 		name: 'MUDr. Miroslava Skovajsová, Ph.D, pedagožka',
 		quote: 'Nošení roušek je opatření, které nám už nic nepřináší, jenom strasti.',
 		date: '2020-05-11',
