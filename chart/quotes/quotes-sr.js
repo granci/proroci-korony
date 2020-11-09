@@ -176,7 +176,7 @@ quotes['sr'] = [
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
-		quote: 'Ako inak to [neoficiálnych pacientov] môžeme zistiť ako nejakým plošným, ako nejakým vzorovým otestovaním_',
+		quote: 'Ako inak to [neoficiálnych pacientov] môžeme zistiť ako nejakým plošným, ako nejakým vzorovým otestovaním?',
 		date: '2020-03-23',
 		link: 'https://www.youtube.com/watch?v=ElxjRl21Oes&ab_channel=Dr.IgorBukovsk%C3%BD%E2%80%93AKV',
 		tag: ['doctor', 'bukovsky']
