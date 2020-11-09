@@ -160,13 +160,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // console.log(numYintervals, maxVal);
     var yInterval = 0;
     quotes.forEach(q => {
-      // if (!q.tag || Object.keys(colors).indexOf(q.tag) === -1) q.tag = 'other';
-      if (!filteredTags || filteredTags.includes(q.tag) || filteredTags === q.tag) {
+      if (!filteredTags || filteredTags === q.tag || filteredTags.includes(q.tag) || q.tag.includes(filteredTags) || (Array.isArray(filteredTags) && filteredTags.some(r=> q.tag.includes(r)))) {
         if (yInterval === numYintervals + 1) yInterval = 0;
         var timestamp = new Date(q.date);
-        // var yAnchor = Math.random() * maxVal;
         var yAnchor = intervalHeight * yInterval;
         yInterval += 1;
+        if (Array.isArray(q.tag)) {
+          q.tag.forEach(t => {
+            if (Object.keys(colors).includes(t)) q.tag = t
+          })
+        }
         var anno = {
           zIndex: yInterval + 5,
           events: {

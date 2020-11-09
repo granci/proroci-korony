@@ -165,14 +165,14 @@ quotes['sr'] = [
 		quote: 'Ide o trochu ťažšiu chrípku, pretože úmrtnosť na koronavírusovú infekciu je ani nie dvojnásobne väčšia, než na bežnú sezónnu chrípku.',
 		date: '2020-05-28',
 		link: 'https://www.youtube.com/watch?v=Q3xOV2-1DOY',
-		tag: 'doctor'
+		tag: ['doctor', 'bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
 		quote: 'Prosím, prestaňte nás strašiť a zanedbávať verejné zdravie.',
 		date: '2020-08-13',
 		link: 'https://www.youtube.com/watch?v=lx6RKf0uZFU&feature=emb_logo&ab_channel=Dr.IgorBukovsk%C3%BD%E2%80%93AKV',
-		tag: 'doctor'
+		tag: ['doctor', 'bukovsky']
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
