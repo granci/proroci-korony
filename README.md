@@ -9,7 +9,7 @@ A simple static HTML project which tries to summarize quotes about corona pandem
 ## Embeding to your website
 The chart can be embeded to your website as a iframe:
 
-`<iframe rc="http://covidology.granci.com/chart/?country=sr&lang=sk" ></iframe>`
+`<iframe src="http://covidology.granci.com/chart/?country=sr&lang=sk" ></iframe>`
 
 In the src you can use these parameters:
  * `country` - allowed values: `us`, `sr`, `cr` (default `sr`)
