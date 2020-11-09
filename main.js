@@ -16,7 +16,7 @@ $(document).ready(function() {
   $('.nav-item#' + country).addClass('active');
   displayFilters();
   internationalize();
-  setIframeSrc(country, selectedLang, getFilter());
+  setIframeSrc(country, selectedLang);
 
   // allign langs right
   if ($('.navbar-toggler').css('display') == 'none') $('.navbar-right').addClass('right');
@@ -28,25 +28,22 @@ $(document).ready(function() {
     $(this).addClass('active');
     country = $(this).attr('id');
     displayFilters();
-    setIframeSrc(country, selectedLang, getFilter());
   });
 
   // change lang
   $('.lang').on('click',function(){
     selectedLang = $(this).attr('id');
     internationalize();
-    setIframeSrc(country, selectedLang, getFilter());
   });
 
-  // change filter
-  $('input[name="filter"]').on('click',function(){
-    setIframeSrc(country, selectedLang, getFilter());
-  });
+  // refresh chart after change country, lang, filter, overlap
+  ['.country', '.lang', 'input[name="filter"]', 'input[name="overlap"]'].forEach(btn => $(btn).on('click', function(){
+    setIframeSrc(country, selectedLang);
+  }));
 
-  // change overlap
-  $('input[name="overlap"]').on('click',function(){
-    setIframeSrc(country, selectedLang, getFilter());
-  });
+  function setIframeSrc(country, lang) {
+    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + lang + '&filter=' + getFilter() + '&overlap=' + $('#overlap').prop('checked').toString());
+  };
 
   function getFilter() {
     var filter = [];
@@ -54,10 +51,6 @@ $(document).ready(function() {
       if (this.checked) filter.push(this.value);
     });
     return filter.join(',');
-  };
-
-  function setIframeSrc(country, lang, filter) {
-    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + lang + '&filter=' + filter + '&overlap=' + $('#overlap').prop('checked').toString());
   };
 
   function parseQueryString(url) {
