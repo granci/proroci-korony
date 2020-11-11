@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
               // backgroundColor: 'rgba(' + colors[q.tag] + ', 0.7)',
               backgroundColor: colors[q.tag] ? 'rgba(' + colors[q.tag] + ', 0.7)' : 'rgba(' + colors.other + ', 0.7)',
               // borderColor: colors[q.tag] ? 'rgb(' + colors[q.tag] + ')' : 'rgba(' + colors.other + ')',
-              text: '<div style="width: 150px; white-space: normal">"' + q.quote + '"</br><a href="' + q.link + '" target="_blank">- ' + q.name + '</a></div>'
+              text: '<div style="width: 150px; white-space: normal">"' + q.quote + '"</br><a href="' + q.link + '" target="_blank">' + q.name + '</a></div>'
             }
           ]
         };

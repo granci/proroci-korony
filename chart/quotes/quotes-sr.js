@@ -36,7 +36,7 @@ quotes['sr'] = [
 	},
 	{
 		name: 'Miroslav Čajka, kňaz ĽSNS',
-		quote: 'ÚMRTIE [Nič nepovedal - povedali o ňom, že dnes odišiel do domu nebeského Otca.]',
+		quote: '[ÚMRTIE]',
 		date: '2020-11-05',
 		link: 'https://www.info.sk/sprava/179658/zomrel-knaz-miroslav-cajka-na-socialnych-sietach-zdielal-prispevky-proti-noseniu-rusok/',
 		tag: 'other',
@@ -170,7 +170,7 @@ quotes['sr'] = [
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
-		quote: 'Preco netestujeme plosne? ... Ako inak to [neidentifikovaných infikovaných] môžeme zistiť ako nejakým plošným, ako nejakým vzorovým otestovaním?',
+		quote: 'Preco netestujeme plosne? ... Ako inak to [neidentifikovaných infikovaných] môžeme zistiť ako nejakým plošným... otestovaním?',
 		date: '2020-03-23',
 		link: 'https://www.youtube.com/watch?v=ElxjRl21Oes#t=165s',
 		tag: ['doctor', 'bukovsky']
@@ -209,7 +209,7 @@ quotes['sr'] = [
 		quote: 'Aby sme sa nielen pripravili na neexistujúcu druhú vlnu pandémie.',
 		date: '2020-07-20',
 		link: 'https://www.youtube.com/watch?v=_qUUOoDE_Jg#t=7s',
-		tag: ['bukovsky']
+		tag: ['doctor', 'bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
@@ -220,10 +220,10 @@ quotes['sr'] = [
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
-		quote: '[cituje prof. Dušeka] Keďže s žiadna prvá vlna nebola, nečakajte ani tú druhú.',
+		quote: '[cituje prof. Dušeka] Keďže žiadna prvá vlna nebola, nečakajte ani tú druhú.',
 		date: '2020-08-28',
 		link: 'https://www.youtube.com/watch?v=H47-RdozgMk#t=90s',
-		tag: ['bukovsky']
+		tag: ['doctor', 'bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
@@ -237,7 +237,6 @@ quotes['sr'] = [
 		quote: 'V Česku máme velké riziko exponenciálního šíření.',
 		date: '2020-09-15',
 		link: 'https://www.blesk.cz/clanek/zpravy-koronavirus/655735/epidemie-nabira-na-sile-priznal-vojtech-a-pritvrdil-rousky-pri-vyuce-a-omezeni-hospod.html',
-		//link2: 'https://www.ceskatelevize.cz/ivysilani/10253066674-zpravy-ve-12/220411012000915/titulky',//este lepsie sa niekde vyjadril tak, ze sa az ospravedlnoval
 		tag: ['bukovsky']
 	},
 	{
@@ -249,10 +248,10 @@ quotes['sr'] = [
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
-		quote: 'Celoplošné testy sa nedajú realizovať tak, ako nám bolo oznámené. ... Nie! Za dva týždne sa nedá zabezpečiť to, čo terajší predseda vlády oznámil ako svoj nápad s celou krajinou.',
+		quote: 'Celoplošné testy sa nedajú realizovať tak, ako nám bolo oznámené.',
 		date: '2020-10-19',
 		link: 'https://www.youtube.com/watch?v=nGcb2G5jVvI#t=405s',
-		tag: ['bukovsky']
+		tag: ['doctor', 'bukovsky']
 	},
 	{// Alebo iné kritické video/text k plošnému testovaniu? Názov tohoto videa je "130 tisíc ľudí bez príznakov aj vírusu na 10 dní doma! No a čo?"
 		name: 'MUDr. Igor Bukovský, dietológ',
@@ -275,6 +274,13 @@ quotes['sr'] = [
 		quote: 'HNUSOBU SME ZASTAVILI',
 		date: '2020-06-12',
 		link: 'https://www.facebook.com/Mistrik2019/posts/733889744033672',
+		tag: 'scientist'
+	},
+	{
+		name: 'Martin Smatana, analytik IZP',
+		quote: 'Ideálnym opatrením by bolo, keby nikto nevychádzal z domu, čo však nie je reálne. [po vydaní prognózy, že nakazených o 100 dní bude 537-tisíc ľudí]',
+		date: '2020-03-18',
+		link: 'https://www.cas.sk/clanok/958832/slovenski-analytici-vypracovali-tri-scenare-pandemie-kolko-ludi-sa-nakazi-koronavirusom-a-kedy-sa-to-cele-skonci/',
 		tag: 'scientist'
 	},
 ];
