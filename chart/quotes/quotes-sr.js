@@ -35,6 +35,14 @@ quotes['sr'] = [
 		tag: 'other'
 	},
 	{
+		name: 'Miroslav Čajka, kňaz ĽSNS',
+		quote: 'ÚMRTIE [Nič nepovedal - povedali o ňom, že dnes odišiel do domu nebeského Otca.]',
+		date: '2020-11-05',
+		link: 'https://www.info.sk/sprava/179658/zomrel-knaz-miroslav-cajka-na-socialnych-sietach-zdielal-prispevky-proti-noseniu-rusok/',
+		tag: 'other',
+		death: true,	
+	},
+	{
 		name: 'Dag Daniš, novinový komentátor',
 		quote: 'Náreky o "strate kontroly" a "hrozbe nezvládnuteľlného preťaženia nemocníc" sú poplašné správy. Nie kvalifikované prognózy.',
 		date: '2020-09-25',
@@ -162,6 +170,35 @@ quotes['sr'] = [
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Preco netestujeme plosne? ... Ako inak to [neidentifikovaných infikovaných] môžeme zistiť ako nejakým plošným, ako nejakým vzorovým otestovaním?',
+		date: '2020-03-23',
+		link: 'https://www.youtube.com/watch?v=ElxjRl21Oes#t=165s',
+		tag: ['doctor', 'bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Urobím všetko preto, aby som prestavil rodičov na iné lieky.',
+		date: '2020-03-23',
+		link: 'https://www.youtube.com/watch?v=ElxjRl21Oes#t=1200s',
+		tag: ['bukovsky']
+	},	
+	{
+		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Mrzí ma, že ... mnohí ľudia prepočuli dôraz na tie detaily.',
+		date: '2020-03-26',
+		link: 'https://www.youtube.com/watch?v=pdZvGXQUJ0U#t=1611s',
+		link2: 'https://www.sks.sk/news/otvoreny-list-hlavneho-odbornika-mz-sr-pre-kardiologiu-mudr-i-bukovskemu-phd',
+		tag: ['bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Opakovane sa tu čudujem, prečo netestujeme celoplošne?',
+		date: '2020-03-30',
+		link: 'https://www.youtube.com/watch?v=_qUUOoDE_Jg#t=15s',
+		tag: ['bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský, dietológ',
 		quote: 'Ide o trochu ťažšiu chrípku, pretože úmrtnosť na koronavírusovú infekciu je ani nie dvojnásobne väčšia, než na bežnú sezónnu chrípku.',
 		date: '2020-05-28',
 		link: 'https://www.youtube.com/watch?v=Q3xOV2-1DOY',
@@ -169,17 +206,62 @@ quotes['sr'] = [
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Aby sme sa nielen pripravili na neexistujúcu druhú vlnu pandémie.',
+		date: '2020-07-20',
+		link: 'https://www.youtube.com/watch?v=_qUUOoDE_Jg#t=7s',
+		tag: ['bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský, dietológ',
 		quote: 'Prosím, prestaňte nás strašiť a zanedbávať verejné zdravie.',
 		date: '2020-08-13',
-		link: 'https://www.youtube.com/watch?v=lx6RKf0uZFU&feature=emb_logo&ab_channel=Dr.IgorBukovsk%C3%BD%E2%80%93AKV',
+		link: 'https://www.youtube.com/watch?v=lx6RKf0uZFU',
 		tag: ['doctor', 'bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský, dietológ',
-		quote: 'Ako inak to [neoficiálnych pacientov] môžeme zistiť ako nejakým plošným, ako nejakým vzorovým otestovaním?',
-		date: '2020-03-23',
-		link: 'https://www.youtube.com/watch?v=ElxjRl21Oes&ab_channel=Dr.IgorBukovsk%C3%BD%E2%80%93AKV',
-		tag: ['doctor', 'bukovsky']
+		quote: '[cituje prof. Dušeka] Keďže s žiadna prvá vlna nebola, nečakajte ani tú druhú.',
+		date: '2020-08-28',
+		link: 'https://www.youtube.com/watch?v=H47-RdozgMk#t=90s',
+		tag: ['bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: '[O Česku keď uvolnili opatrenia predtým, ako sa dostali do rýchleho rastu.] Majú viac prípadov a aj úmrtí a České ministerstvo zdravotníctva začína situáciu zreálňovať.',
+		date: '2020-08-28',
+		link: 'https://www.youtube.com/watch?v=H47-RdozgMk#t=210s',
+		tag: ['bukovsky']
+	},
+	{
+		name: 'Prof. RNDr. Ladislav Dušek, Ph.D, štatistik',
+		quote: 'V Česku máme velké riziko exponenciálního šíření.',
+		date: '2020-09-15',
+		link: 'https://www.blesk.cz/clanek/zpravy-koronavirus/655735/epidemie-nabira-na-sile-priznal-vojtech-a-pritvrdil-rousky-pri-vyuce-a-omezeni-hospod.html',
+		//link2: 'https://www.ceskatelevize.cz/ivysilani/10253066674-zpravy-ve-12/220411012000915/titulky',//este lepsie sa niekde vyjadril tak, ze sa az ospravedlnoval
+		tag: ['bukovsky']
+	},
+	{
+		name: 'Andrej Babiš, predseda vlády ČR',
+		quote: 'Bohužel jsme asi udělali chybu, že 1. července skončila povinnost nosit roušky.',
+		date: '2020-09-19',
+		link: 'https://www.denik.cz/z_domova/babis-koronavirus-krizovy-stab-opatreni-rousky.html',
+		tag: ['bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Celoplošné testy sa nedajú realizovať tak, ako nám bolo oznámené. ... Nie! Za dva týždne sa nedá zabezpečiť to, čo terajší predseda vlády oznámil ako svoj nápad s celou krajinou.',
+		date: '2020-10-19',
+		link: 'https://www.youtube.com/watch?v=nGcb2G5jVvI#t=405s',
+		tag: ['bukovsky']
+	},
+	{// Alebo iné kritické video/text k plošnému testovaniu? Názov tohoto videa je "130 tisíc ľudí bez príznakov aj vírusu na 10 dní doma! No a čo?"
+		name: 'MUDr. Igor Bukovský, dietológ',
+		quote: 'Záujem našej spoločnosti teraz je: Dosiahnuť čo najpomalšie šírenie infekcie, ...najmenej ťažkých stavov ..., popritom aby sme nenarušili zbytočne životy ďalších ľudí... .[Vyliezť na kopec bez kráčania.]',
+	//	quote: '[Kritika 10 dňovej karantény pri potenciálnom falošne pozitívnom výsledku pri plošnom testovaní:] Ak dôjde k celoplošnému testovaniu, ktorým sa nám vláda vyhráža, tak môže dôjsť ..uväznení v domácej karanténe na základe falošne pozitívneho výsledku.',
+		date: '2020-10-29',
+	//	link: 'https://www.youtube.com/watch?v=nGcb2G5jVvI#t=269s',
+		link: 'https://www.youtube.com/watch?v=nGcb2G5jVvI#t=1380s',
+		tag: ['bukovsky']
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
