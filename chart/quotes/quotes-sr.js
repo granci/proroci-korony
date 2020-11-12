@@ -36,13 +36,13 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		link: 'https://www.youtube.com/watch?v=sqik_dZy6lI',
 		tag: 'polititian'
 	},
-	// {
-	// 	name: 'Marián Kotleba, poslanec ĽSNS',
-	// 	quote: 'Ak by vám vláda a médiá každý deň netlačili zo všetkých strán NEOVERITEĽNÉ informácie o korone, počte vraj nakazených, vraj mŕtvych, nových testoch a ďalšej propagande okolo toho, vedeli by ste o nejakej vraj pandémii?',
-	// 	date: '2020-10-06',
-	// 	link: 'https://www.facebook.com/Kotlebaofficialfanpage/posts/155189186265390',
-	// 	tag: 'polititian'
-	// },
+	{
+		name: 'Marián Kotleba, poslanec ĽSNS',
+		quote: 'Ak by vám vláda a médiá každý deň netlačili zo všetkých strán NEOVERITEĽNÉ informácie o korone, (...) vedeli by ste o nejakej vraj pandémii?',
+		date: '2020-10-06',
+		link: 'https://www.facebook.com/Kotlebaofficialfanpage/posts/155189186265390',
+		tag: 'polititian'
+	},
 	{
 		name: 'Marián Kotleba, poslanec ĽSNS',
 		quote: 'Priatelia, takže včera som bol na teste a dnes prišiel výsledok. POZITÍVNY!',
@@ -64,9 +64,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		date: '2020-09-25',
 		link: 'https://www.tvnoviny.sk/koronavirus/2008354_matovic-pokazili-sme-si-to-vo-stvrtok-pribudlo-rekordnych-419-nakazenych',
 		tag: 'polititian'
-	},
-
-	
+	},	
 	{
 		name: 'Milan Mazúrek, poslanec ĽSNS',
 		quote: 'Nebudem si ničiť zdravie tou hnusnou handrou a dýchať vysoké koncentrácie vlastného co2.',
@@ -184,38 +182,38 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
-		quote: 'Naše straty 21 ľudí na koronavírus sú malé. Potreba 14 dňovej karantény je jasná v prípadoch dokázaného testu na koronavírus. Urýchlime návrat do bežného života.',
+		quote: 'Potreba 14 dňovej karantény je jasná v prípadoch dokázaného testu na koronavírus. Urýchlime návrat do bežného života.',
 		date: '2020-05-06',
 		link: 'https://www.facebook.com/story.php?story_fbid=2720917151363780&id=100003365662613',//alebo https://m.facebook.com/story.php?story_fbid=4387439101282385&id=100000490166403 treba nájsť originál post, ak nie je len pre priateľov, alebo nie pre mňa. 
-		tag: 'doctor',//pripadne len/a 'fischer'
+		tag: ['doctor', 'fischer'],
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Úmrtnosť na koronavírus 43 ľudí je smiešne nízka. Som za podstatne rýchlejšie ukončenie vírusovej karantény v Slovenskej republike.',
 		date: '2020-09-26',
 		link: 'https://www.facebook.com/story.php?story_fbid=172396421083132&id=100049383253623',
-		tag: 'doctor',//pripadne len/a 'fischer'
+		tag: ['doctor', 'fischer'],
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Zrušte ďalšie reštrikčné opatrenia v súvislosti s koronavírom, ohrozuje zdravie ľudí viac, než samotný vírus.',
 		date: '2020-10-06',
 		link: 'https://www.facebook.com/viliam.fischer.501/posts/175008620821912',
-		tag: 'doctor'//pripadne AJ 'fischer' - toto je jeho pôvodný zobrazovaný príspevok
+		tag: ['doctor', 'fischer'] 
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Na koronavírus zomrelo doteraz 90 ľudí. Je najvyšší čas prestať mrhať drahými PCR testami v neindikovaných prípadoch a prestať počítať pozitívne prípady bez klinického kontextu.',
 		date: '2020-10-22',
 		link: 'https://m.facebook.com/story.php?story_fbid=179374340385340&id=100049383253623',
-		tag: 'doctor'//pripadne len/a 'fischer'
+		tag: 'fischer'//pripadne len/a 'fischer'
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Na koronavírus zomrelo 200 ľudí. Peniaze na testovanie by sa zišli inde.',//existuje aj hejt testovania negujúci prvý výrok o jasnosti potreby karantény pre pozitívneho
 		date: '2020-10-29',
 		link: 'https://www.facebook.com/story.php?story_fbid=181414156848025&id=100049383253623',
-		tag: ['doctor', 'plosnetestovanie'] //pripadne aj 'fischer'
+		tag: ['fischer', 'plosnetestovanie'] //pripadne aj 'fischer'
 	},
 	
 	{
