@@ -49,6 +49,13 @@ quotes['cr'] = [
 		tag: 'polititian'
 	},
 	{
+		name: 'Andrej Babiš, predseda vlády ČR',
+		quote: 'Bohužel jsme asi udělali chybu, že 1. července skončila povinnost nosit roušky.',
+		date: '2020-09-19',
+		link: 'https://www.denik.cz/z_domova/babis-koronavirus-krizovy-stab-opatreni-rousky.html',
+		tag: 'polititian'
+	},
+	{
 		name: 'MUDr. Lukáš Pollert, lékař',
 		quote: 'Koronavirus mě zklamal, jako lékař jsem se na něj těšil.',
 		date: '2020-06-09',

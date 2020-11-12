@@ -1,3 +1,15 @@
+var colors = {
+  doctor: '102, 204, 255',
+  scientist: '255, 230, 179',
+  polititian: '255, 204, 204',
+  republican: '255,173,175',
+  democrat: '153,161,228',
+  publicist: '140, 217, 140',
+  conspirator: '173, 235, 173',
+  artist: '221, 153, 255',
+  other: '200, 200, 200',
+};
+
 document.addEventListener('DOMContentLoaded', function () {
 //$(document).ready(function() {
 
@@ -144,17 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function mkAnnos(quotes, maxVal, filteredTags, allowOverlap) {
     var annos = [];
-    var colors = {
-      doctor: '102, 204, 255',
-      scientist: '255, 230, 179',
-      polititian: '255, 204, 204',
-      republican: '255,173,175',
-      democrat: '153,161,228',
-      publicist: '140, 217, 140',
-      conspirator: '173, 235, 173',
-      artist: '221, 153, 255',
-      other: '200, 200, 200',
-    };
+  
     // get approximate height of the annotation buble in chart values:
     var intervalHeight = 120 / (window.innerHeight || document.documentElement.clientHeight) * maxVal;
     var numYintervals = Math.floor(maxVal / intervalHeight);
