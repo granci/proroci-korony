@@ -76,7 +76,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	//doctor
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
-		quote: 'Preco netestujeme plosne? ... Ako inak to [neidentifikovaných infikovaných] môžeme zistiť ako nejakým plošným... otestovaním?',
+		quote: 'Ako inak to [neidentifikovaných infikovaných] môžeme zistiť ako nejakým plošným... otestovaním?',
 		date: '2020-03-23',
 		link: 'https://www.youtube.com/watch?v=ElxjRl21Oes#t=165s',
 		tag: ['doctor', 'bukovsky', 'plosnetestovanie']

@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  // start local server: sudo systemctl start apache2
+  // start local server: sudo systemctl restart apache2
 
   var countryDefs = {
     sr: {
@@ -125,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
       delimiter: ','
     },  
   };
+  
   var queryParams = parseQueryString(window.location);
   var country = (quotes[queryParams.country]) ? queryParams.country : 'sr';
   var lang = (langs[queryParams.lang]) ? queryParams.lang : 'sk';
@@ -265,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var params = {}, queries, temp, i, l;
 
     // Split into key/value pairs
-    queries = url.search.substring(1).split("&");
+    queries = decodeURIComponent(url.search).substring(1).split("&");
 
     // Convert the array of strings into an object
     for ( i = 0, l = queries.length; i < l; i++ ) {
