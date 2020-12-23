@@ -324,7 +324,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	},
 	{
 		name: 'Jozef Banáš, publicista',
-		quote: '[HOSPITALIZOVANÝ vo vážnom stave].',
+		quote: '[HOSPITALIZOVANÝ na kyslíku].',
 		date: '2020-12-22',
 		link: 'https://www.omediach.com/tv/19605-adela-vinczeova-otec-skoncil-s-covidom-v-nemocnici-dufam-ze-na-covid-zmeni-nazor-video',
 		tag: ['publicist', 'banas']
