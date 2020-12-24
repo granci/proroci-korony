@@ -206,14 +206,14 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Na koronavírus zomrelo doteraz 90 ľudí. Je najvyšší čas prestať mrhať drahými PCR testami v neindikovaných prípadoch a prestať počítať pozitívne prípady bez klinického kontextu.',
 		date: '2020-10-22',
 		link: 'https://m.facebook.com/story.php?story_fbid=179374340385340&id=100049383253623',
-		tag: 'fischer'//pripadne len/a 'fischer'
+		tag: ['doctor', 'fischer']
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Na koronavírus zomrelo 200 ľudí. Peniaze na testovanie by sa zišli inde.',//existuje aj hejt testovania negujúci prvý výrok o jasnosti potreby karantény pre pozitívneho
 		date: '2020-10-29',
 		link: 'https://www.facebook.com/story.php?story_fbid=181414156848025&id=100049383253623',
-		tag: ['fischer', 'plosnetestovanie'] //pripadne aj 'fischer'
+		tag: ['doctor', 'fischer', 'plosnetestovanie']
 	},
 	
 	{
@@ -292,14 +292,49 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Situácia s koronavírusom je vážna, zdá sa, že bude ešte vážnejšia.',
 		date: '2020-03-19',
 		link: 'https://www.facebook.com/banas.jozo/posts/2712533132192568',
-		tag: 'publicist'
+		tag: ['publicist', 'banas']
 	},
 	{
 		name: 'Jozef Banáš, publicista',
 		quote: 'Dodnes nikto nevysvetlil v čom spočíva nebezpečenstvo koronavírusu.',
 		date: '2020-06-24',
 		link: 'https://www.facebook.com/banas.jozo/posts/2940654959380383',
-		tag: 'publicist'
+		tag: ['publicist', 'banas']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: 'Korona je choroba tak zákerná, že bez testu by nikto nevedel, že ju má.',
+		date: '2020-09-30',
+		link: 'https://www.facebook.com/banas.jozo/posts/3227373870708489',
+		tag: ['publicist', 'banas']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: 'Mám solídnu imunitu, otužujem sa, takže si myslím, že pre mňa testovanie ani očkovanie nie je potrebné.',
+		date: '2020-11-03',
+		link: 'https://www1.pluska.sk/soubiznis/domaci-soubiznis/jozef-banas-test-nemusel-ani-nesiel-obmedzovat-vsak-nenecha-vybral-toto-miesto?',
+		tag: ['publicist', 'banas', 'plosnetestovanie']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: 'Studené jazero je pre mňa vakcínové jazero.',
+		date: '2020-12-06',
+		link: 'https://www.facebook.com/banas.jozo/posts/3417337585045449',
+		tag: ['publicist', 'banas']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: '[HOSPITALIZOVANÝ na kyslíku].',
+		date: '2020-12-22',
+		link: 'https://www.omediach.com/tv/19605-adela-vinczeova-otec-skoncil-s-covidom-v-nemocnici-dufam-ze-na-covid-zmeni-nazor-video',
+		tag: ['publicist', 'banas']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: '[Z NEMOCNICE]Nikdy som Covid nespochybňoval.',
+		date: '2020-12-23',
+		link: 'https://www.omediach.com/hoaxy/19609-banas-z-nemocnice-nahral-video-v-ktorom-tvrdi-ze-on-kovid-nikdy-nespochybnoval-video',
+		tag: ['publicist', 'banas', 'plosnetestovanie']
 	},
 	
 	{
