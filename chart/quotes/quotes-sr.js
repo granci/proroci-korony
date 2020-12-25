@@ -179,6 +179,13 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		link: 'https://www.youtube.com/watch?v=nGcb2G5jVvI#t=1380s',
 		tag: ['bukovsky']
 	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Otče náš, takto sa cítim a prosím o silu! [NÁZOV VIDEA DEŇ PO HOSPITALIZÁCII "IMUNOLÓGA" BANÁŠA]',
+		date: '2020-12-23',
+		link: 'https://www.youtube.com/watch?v=rYZ7UwFV6xk',
+		tag: ['doctor', 'bukovsky', 'banasrelated']
+	},
 	
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
