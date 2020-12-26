@@ -331,6 +331,13 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	},
 	{
 		name: 'Jozef Banáš, publicista',
+		quote: 'Prekonal som Covid. Mal som hrozne zlý stav - absolútny výpadok energie bez horúčky. Som stále úplne slabý. Aj na apel dcéry nepôjdem dnes do plánovanej TV diskusie.',
+		date: '2020-12-21',
+		link: 'https://ereport.sk/po-adele-priznal-covid-19-aj-jej-otec-jozef-banas-mal-som-vypadok-energie/',
+		tag: ['publicist', 'banas']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
 		quote: '[HOSPITALIZOVANÝ na kyslíku].',
 		date: '2020-12-22',
 		link: 'https://www.omediach.com/tv/19605-adela-vinczeova-otec-skoncil-s-covidom-v-nemocnici-dufam-ze-na-covid-zmeni-nazor-video',
