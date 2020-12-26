@@ -76,6 +76,20 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	//doctor
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Mladí ľudia majú väčšie riziko úmrtia na vírusové infekcie.',
+		date: '2020-02-17',
+		link: 'https://www.youtube.com/watch?v=yvuMU1fMWB0#t=440s',
+		tag: ['doctor', 'bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Vitamíny, stopové prvky a potraviny na rôznych úrovniach poskytujú nášmu organizmu ochranu pred vírusmi.',
+		date: '2020-02-17',
+		link: 'https://www.youtube.com/watch?v=yvuMU1fMWB0#t=528s',
+		tag: ['bukovsky', 'banasrelated']
+	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
 		quote: 'Ako inak to [neidentifikovaných infikovaných] môžeme zistiť ako nejakým plošným... otestovaním?',
 		date: '2020-03-23',
 		link: 'https://www.youtube.com/watch?v=ElxjRl21Oes#t=165s',
@@ -116,6 +130,14 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		link: 'https://www.youtube.com/watch?v=_qUUOoDE_Jg#t=15s',
 		tag: ['bukovsky', 'plosnetestovanie']
 	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Austrálski vedci z University of Melbourne zmapovali imunologické procesy v organizme mladej 47 ročnej ženy a pre náš organizmus je to chrípka, pretože mala teplotu iba 48,5C a vyliečila sa. To je fantastická správa. :-)',
+		date: '2020-03-30',
+		link: 'https://www.youtube.com/watch?v=_qUUOoDE_Jg#t=795s',
+		tag: ['bukovsky', 'banasrelated']
+	},
+	
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
 		quote: 'Ide o trochu ťažšiu chrípku, pretože úmrtnosť na koronavírusovú infekciu je ani nie dvojnásobne väčšia, než na bežnú sezónnu chrípku.',
