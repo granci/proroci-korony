@@ -8,6 +8,7 @@ var colors = {
   conspirator: '173, 235, 173',
   artist: '221, 153, 255',
   other: '200, 200, 200',
+  death: '133, 133, 133',
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // csvURL: 'https://mapa.covid.chat/export/csv',
       // itemDelimiter: ';',
       beforeParse: function (csv) {
-        return csv.replace(/\n\n/g, '\n');
+        return csv.replace(/\n\n/g, '\n');//for fb bug/feature
       }
     },
 
@@ -144,7 +145,9 @@ document.addEventListener('DOMContentLoaded', function () {
     options.title = {
       text: langs[lang].title + ' (' + langs[lang].country[country] + ')'
     };
-    options.caption.text = langs[lang].addRepo + ': <a href="https://github.com/granci/proroci-korony/" target="_blank">github.com/granci/proroci-korony</a>'
+    
+    options.caption.text = langs[lang].basicVersion + ': <a href="http://covidology.granci.com/">covidology.granci.com/</a> '
+      + langs[lang].addRepo + ': <a href="https://github.com/granci/proroci-korony/" target="_blank">github.com/granci/proroci-korony</a>'
 
     var chart = Highcharts.chart('container', options);
     chart.setSize(undefined, window.innerHeight || document.documentElement.clientHeight);
@@ -191,6 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
             accessibility: {
               description: '"' + q.quote + '" - ' + q.name
             },
+            borderWidth: q.death ? 3 : 1,
             // shape: 'connector',
             // align: 'right',
           },
@@ -202,9 +206,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 x: timestamp,
                 y: yAnchor
               },
-              // backgroundColor: 'rgba(' + colors[q.tag] + ', 0.7)',
-              backgroundColor: colors[q.tag] ? 'rgba(' + colors[q.tag] + ', 0.7)' : 'rgba(' + colors.other + ', 0.7)',
+              
+              backgroundColor: 'rgba(' + q.death ? colors.death : ( colors[q.tag] ? colors[q.tag] : colors.other ) + ', 0.7)',
               // borderColor: colors[q.tag] ? 'rgb(' + colors[q.tag] + ')' : 'rgba(' + colors.other + ')',
+              
               text: '<div style="width: 150px; white-space: normal">"' + q.quote + '"</br><a href="' + q.link + '" target="_blank">' + q.name + '</a></div>'
             }
           ]
