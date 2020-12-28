@@ -1,6 +1,7 @@
 var langs = {
 	en: {
 		title:'Commented daily progress of Covid-19 pandemics',
+		basicVersion: 'Basic graph version',
 		addRepo: 'Missing some quote? Add to project',
 		country: {
 			sr: 'Slovakia',
@@ -24,6 +25,7 @@ var langs = {
 	},
 	sk: {
 		title:'Komentovaný denný vývoj pandémie Covid-19',
+		basicVersion: 'Základná verzia grafu',
 		addRepo: 'Chýba ti nejaký výrok? Doplň do projektu',
 		country: {
 			sr: 'Slovensko',
@@ -47,6 +49,7 @@ var langs = {
 	},
 	cz: {
 		title:'Komentovaný denní vývoj pandemie Covid-19',
+		basicVersion: 'Základní verze grafu',
 		addRepo: 'Chybí ti nějaký výrok? Doplň do projektu',
 		country: {
 			sr: 'Slovensko',
