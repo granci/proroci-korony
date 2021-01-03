@@ -420,9 +420,24 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	},
 	{
 		name: 'Miroslav Čajka, kňaz ĽSNS',
-		quote: '[ÚMRTIE]',
+		quote: '[† ÚMRTIE vo veku 68 rokov]',
 		date: '2020-11-05',
 		link: 'https://www.info.sk/sprava/179658/zomrel-knaz-miroslav-cajka-na-socialnych-sietach-zdielal-prispevky-proti-noseniu-rusok/',
+		tag: 'other',
+		death: true,
+	},
+	{
+		name: 'Peter B., účastník protestu 17.11.',
+		quote: '[Aj keď neveril na Covid, nakazil sa na proteste a 1.12. už bol hospitalizovaný aj s pľúcnou ventiláciou.]',
+		date: '2020-11-17',
+		link: 'https://www.cas.sk/fotogaleria/1060451/peter-66-po-ucasti-na-protestoch-v-bratislave-zomrel-spoved-zdrveneho-syna-otca-zabil-covid-ktoremu-neveril/9/',
+		tag: 'other'
+	},
+	{
+		name: 'Peter B., účastník protestu 17.11.',
+		quote: '[† ÚMRTIE vo veku 66 rokov]',
+		date: '2020-12-05',
+		link: 'https://www.cas.sk/clanok/1060451/peter-66-po-ucasti-na-protestoch-v-bratislave-zomrel-spoved-zdrveneho-syna-otca-zabil-covid-ktoremu-neveril/',
 		tag: 'other',
 		death: true,	
 	}
