@@ -41,7 +41,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Ak by vám vláda a médiá každý deň netlačili zo všetkých strán NEOVERITEĽNÉ informácie o korone, (...) vedeli by ste o nejakej vraj pandémii?',
 		date: '2020-10-06',
 		link: 'https://www.facebook.com/Kotlebaofficialfanpage/posts/155189186265390',
-		tag: 'polititian'
+		tag: ['polititian', 'druhavlna']
 	},
 	{
 		name: 'Marián Kotleba, poslanec ĽSNS',
@@ -56,7 +56,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'NEVESTY, DOBRE BUDE! Dnes na vládu idem so zaujímavým návrhom, ktorý zásadným spôsobom zmení strašidlo 30 hostí na hostine života.',
 		date: '2020-09-16',
 		link: 'https://www.dobrenoviny.sk/c/189872/nevesty-dobre-bude-odkazuje-matovic-co-sa-chysta-urobit-',
-		tag: 'polititian'
+		tag: ['polititian', 'druhavlna']
 	},
 	{
 		name: 'Igor Matovič, premiér SR',
@@ -150,42 +150,42 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Aby sme sa nielen pripravili na neexistujúcu druhú vlnu pandémie.',
 		date: '2020-07-20',
 		link: 'https://www.youtube.com/watch?v=_qUUOoDE_Jg#t=7s',
-		tag: ['doctor', 'bukovsky']
+		tag: ['doctor', 'bukovsky', 'druhavlna']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
 		quote: 'Prosím, prestaňte nás strašiť a zanedbávať verejné zdravie.',
 		date: '2020-08-13',
 		link: 'https://www.youtube.com/watch?v=lx6RKf0uZFU',
-		tag: ['doctor', 'bukovsky']
+		tag: ['doctor', 'bukovsky', 'druhavlna']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
 		quote: '[cituje prof. Dušeka] Keďže žiadna prvá vlna nebola, nečakajte ani tú druhú.',
 		date: '2020-08-28',
 		link: 'https://www.youtube.com/watch?v=H47-RdozgMk#t=90s',
-		tag: ['doctor', 'bukovsky']
+		tag: ['doctor', 'bukovsky', 'druhavlna']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
 		quote: '[O Česku keď uvolnili opatrenia predtým, ako sa dostali do rýchleho rastu.] Majú viac prípadov a aj úmrtí a České ministerstvo zdravotníctva začína situáciu zreálňovať.',
 		date: '2020-08-28',
 		link: 'https://www.youtube.com/watch?v=H47-RdozgMk#t=210s',
-		tag: ['bukovsky']
+		tag: ['bukovsky', 'druhavlna']
 	},
 	{
 		name: 'Prof. RNDr. Ladislav Dušek, Ph.D, štatistik',
 		quote: 'V Česku máme velké riziko exponenciálního šíření.',
 		date: '2020-09-15',
 		link: 'https://www.blesk.cz/clanek/zpravy-koronavirus/655735/epidemie-nabira-na-sile-priznal-vojtech-a-pritvrdil-rousky-pri-vyuce-a-omezeni-hospod.html',
-		tag: ['bukovskyrelated']
+		tag: ['bukovskyrelated', 'druhavlna']
 	},
 	{
 		name: 'Andrej Babiš, predseda vlády ČR',
 		quote: 'Bohužel jsme asi udělali chybu, že 1. července skončila povinnost nosit roušky.',
 		date: '2020-09-19',
 		link: 'https://www.denik.cz/z_domova/babis-koronavirus-krizovy-stab-opatreni-rousky.html',
-		tag: ['bukovskyrelated']
+		tag: ['bukovskyrelated', 'druhavlna']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -221,14 +221,14 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Úmrtnosť na koronavírus 43 ľudí je smiešne nízka. Som za podstatne rýchlejšie ukončenie vírusovej karantény v Slovenskej republike.',
 		date: '2020-09-26',
 		link: 'https://www.facebook.com/story.php?story_fbid=172396421083132&id=100049383253623',
-		tag: ['doctor', 'fischer'],
+		tag: ['doctor', 'fischer', 'druhavlna'],
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Zrušte ďalšie reštrikčné opatrenia v súvislosti s koronavírom, ohrozuje zdravie ľudí viac, než samotný vírus.',
 		date: '2020-10-06',
 		link: 'https://www.facebook.com/viliam.fischer.501/posts/175008620821912',
-		tag: ['doctor', 'fischer'] 
+		tag: ['doctor', 'fischer', 'druhavlna'] 
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
@@ -258,7 +258,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Koronavírus zabil tých, ktorých by zabila aj chrípka, proste senzitívnych ľudí. Vírus sa vyčerpáva a na ostatných nemá.',
 		date: '2020-08-24',
 		link: 'https://www.youtube.com/watch?v=2VBmD0Qn4Ho',
-		tag: 'doctor'
+		tag: ['doctor', 'druhavlna']
 	},
 	
 	//scientist
@@ -281,7 +281,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Príchod druhej vlny koronavírusu u nás dramaticky nepocítime.',
 		date: '2020-05-06',
 		link: 'https://www.webnoviny.sk/vzdravotnictve/prichod-druhej-vlny-koronavirusu-dramaticky-nepocitime-odhaduje-profesor-krcmery/',
-		tag: 'scientist'
+		tag: ['scientist', 'druhavlna']
 	},
 	
 	{
@@ -289,14 +289,14 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Covid do Vánoc opravdu zmizí, výrazně zeslábl, je tu šílenství.',
 		date: '2020-10-06',
 		link: 'https://www.reflex.cz/clanek/rozhovory/103250/sona-pekova-covid-do-vanoc-opravdu-zmizi-vyrazne-zeslabl-je-tu-silenstvi-potvrzuje-se-ze-neni-z-prirody.html',
-		tag: 'scientist'
+		tag: ['scientist', 'druhavlna']
 	},
 	{
 		name: 'MUDr. Soňa Peková, virologička',
 		quote: 'Druhá vlna nebude, za půl roku covid zmizí.',
 		date: '2020-06-03',
 		link: 'https://www.novinky.cz/koronavirus/clanek/pekova-druha-vlna-nebude-za-pul-roku-covid-zmizi-40326320',
-		tag: 'scientist'
+		tag: ['scientist',, 'druhavlna']
 	},
 	
 	{
@@ -378,7 +378,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Každá takáto pandémia sa zjavuje na jar a trápi nás do prvých horúcich letných dní, kedy sama „vyhasne“.',
 		date: '2020-06-15',
 		link: 'https://gumurin.blog.pravda.sk/2020/06/15/korona-pandemia-ako-globalny-experiment/',
-		tag: 'publicist'
+		tag: ['publicist', 'druhavlna']
 	},
 
 	{
@@ -400,7 +400,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Náreky o "strate kontroly" a "hrozbe nezvládnuteľlného preťaženia nemocníc" sú poplašné správy. Nie kvalifikované prognózy.',
 		date: '2020-09-25',
 		link: 'https://www.facebook.com/dag.danis/posts/2706889962882758',
-		tag: 'publicist'
+		tag: ['publicist', 'druhavlna']
 	},
 	
 	//other
