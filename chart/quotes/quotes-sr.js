@@ -15,18 +15,25 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	},
 	
 	{
-		name: 'Peter Pellegríni, poslanec SMER',
+		name: 'Peter Pellegríni, premiér SR',
 		quote: 'Akonáhle sa začne vírus šíriť nekontrolovane, vtedy budeme musieť pristúpiť k plošnému testovaniu. Objednávame rýchlotesty. [Kičurove testy protilátok - nevhodnné na plošné testovanie]',
 		date: '2020-03-12',
 		link: 'https://www.facebook.com/story.php?story_fbid=10224278643572869&id=1206822078',
 		tag: ['polititian', 'plosnetestovanie']//preferujem iba sk verziu v url namiesto area_testing
 	},
 	{
-		name: 'Peter Pellegríni, poslanec HLAS/SMER',
+		name: 'Peter Pellegríni, poslanec Hlas',
 		quote: 'Svojím rodičom by som testovanie [Antigénnymi testami infekčnosti] neodporučil.',
 		date: '2020-10-20',
 		link: 'https://www.youtube.com/watch?v=zoUHbqMm7E4',
 		tag: ['polititian', 'plosnetestovanie']
+	},
+	{
+		name: 'Peter Pellegríni, poslanec Hlas',
+		quote: 'Žiadam preto premiéra Matoviča, aby sa prestal hrať na sultána a neurčoval, čo bude otvorené a čo zatvorené, ale umožnil ľuďom slobodne žiť a dýchať.',
+		date: '2020-11130',
+		link: 'https://www.omediach.com/tlacove-spravy/19371-pellegrini-ziadam-premiera-matovica-aby-zrusil-zakaz-zhromazdovania-a-otvoril-aj-ostatne-prevadzky',
+		tag: ['polititian']
 	},
 	
 	{
