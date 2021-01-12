@@ -16,7 +16,7 @@ $(document).ready(function() {
   $('.nav-item#' + country).addClass('active');
   displayFilters();
   internationalize();
-  setIframeSrc(country, selectedLang);
+  setIframeSrc(country, selectedLang, '');
 
   // allign langs right
   if ($('.navbar-toggler').css('display') == 'none') $('.navbar-right').addClass('right');
@@ -36,13 +36,24 @@ $(document).ready(function() {
     internationalize();
   });
 
-  // refresh chart after change country, lang, filter, overlap
+  // refresh chart after change country, lang, search, filter, overlap
   ['.country', '.lang', 'input[name="filter"]', 'input[name="overlap"]'].forEach(btn => $(btn).on('click', function(){
-    setIframeSrc(country, selectedLang);
+    setIframeSrc(country, selectedLang, '');
   }));
+  $('#submit').on('click', function(){
+    setIframeSrc(country, selectedLang, $('#search').val());
+  });
+  // $('#search').keyup(function (e) {
+  //   var searchStr = $('#search').val();
+  //   console.log(searchStr);
+  //   if (e.keyCode == 13) {
+  //     setIframeSrc(country, selectedLang, searchStr);
+  //     $('#search').val() = searchStr;
+  //   }
+  // });
 
-  function setIframeSrc(country, lang) {
-    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + lang + '&filter=' + getFilter() + '&overlap=' + $('#overlap').prop('checked').toString());
+  function setIframeSrc(country, lang, search) {
+    $('#chart').attr('src', 'chart/?country=' + country + '&lang=' + lang + '&filter=' + getFilter() + '&search=' + search + '&overlap=' + $('#overlap').prop('checked').toString());
   };
 
   function getFilter() {
@@ -86,6 +97,8 @@ $(document).ready(function() {
       $('#' + key).text(langs[selectedLang].country[key]);
     });
     $('#langDropdown').text(langs[selectedLang].lang);
+    $('#search').attr('placeholder', langs[selectedLang].search);
+    $('#submit').text(langs[selectedLang].submit);
     ['polititian', 'scientist', 'doctor', 'other', 'republican', 'democrat'].forEach(f => $('label[for=' + f + ']').text(langs[selectedLang].filter[f]));
     $('label[for=overlap]').text(langs[selectedLang].overlap);
   };

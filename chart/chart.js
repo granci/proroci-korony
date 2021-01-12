@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   // start local server: sudo systemctl restart apache2
+  // then go to: http://localhost/korona/proroci-korony/chart
 
   var countryDefs = {
     sr: {
@@ -140,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
     options.data.csv = $.csv.fromArrays(adjustedCsv);
     options.data.itemDelimiter = ',';
 
-    options.annotations = mkAnnos(sortQuotes(quotes[country]), arrayMaxVal(adjustedCsv), queryParams.filter, overlap);
+    options.annotations = mkAnnos(sortQuotes(quotes[country]), arrayMaxVal(adjustedCsv), queryParams.filter, queryParams.search, overlap);
     options.title = {
       text: langs[lang].title + ' (' + langs[lang].country[country] + ')'
     };
@@ -155,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return quotes.sort((a, b) => new Date(a.date) - new Date(b.date));
   }
 
-  function mkAnnos(quotes, maxVal, filteredTags, allowOverlap) {
+  function mkAnnos(quotes, maxVal, filteredTags, searchString, allowOverlap) {
     var annos = [];
   
     // get approximate height of the annotation buble in chart values:
@@ -164,7 +165,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // console.log(numYintervals, maxVal);
     var yInterval = 0;
     quotes.forEach(q => {
-      if (!filteredTags || filteredTags === q.tag || filteredTags.includes(q.tag) || q.tag.includes(filteredTags) || (Array.isArray(filteredTags) && filteredTags.some(r=> q.tag.includes(r)))) {
+      if (
+        (!filteredTags || filteredTags === q.tag || filteredTags.includes(q.tag) || q.tag.includes(filteredTags) || (Array.isArray(filteredTags) && filteredTags.some(r=> q.tag.includes(r)))) 
+        && (!searchString || isInString(q.name, searchString, false) || isInString(q.quote, searchString, false) || isInString(q.link, searchString, true))
+      ) {
         if (yInterval === numYintervals + 1) yInterval = 0;
         var timestamp = new Date(q.date);
         var yAnchor = intervalHeight * yInterval;
@@ -214,6 +218,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     return annos;
   };
+
+  function isInString(str, searchString, exactText = true) {
+    if (exactText && str.indexOf(searchString) > 0) return true;
+    else if (!exactText && str.normalize('NFD').toLowerCase().indexOf(searchString.normalize('NFD').toLowerCase()) > 0) return true;
+    else return false;
+  }
 
   function parseCsv (csvString, delimiter) {
     var csvArr = $.csv.toArrays(csvString, {separator: delimiter});

@@ -14,7 +14,8 @@ The chart can be embeded to your website as a iframe:
 In the src you can use these parameters:
  * `country` - allowed values: `us`, `sr`, `cr` (default `sr`)
  * `lang` - allowed values: `en`, `sk`, `cz` (default `sk`)
- * `filter` - comma-separated tag of the quote type as defined in [quotes folder](https://github.com/granci/proroci-korony/tree/main/chart/quotes) (default displays all the quotes)
+ * `filter` - comma-separated `tag` property of the quote type as defined in [quotes folder](https://github.com/granci/proroci-korony/tree/main/chart/quotes) (default displays all the quotes)
+ * `search` - string to be searched in `name`, `quote` or `link` properties as defined in [quotes folder](https://github.com/granci/proroci-korony/tree/main/chart/quotes) (default displays all the quotes)
  * `overlap` - boolean, if false, some quotes will be hidden to prevent overlapping (default is true, so all the quotes are displayed in the chart regardless overlapping)
 
 ## Additional development

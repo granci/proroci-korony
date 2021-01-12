@@ -22,6 +22,8 @@ var langs = {
 			democrat: 'Democrats',
 		},
 		overlap: 'Allow overlap',
+		search: 'Search',
+		submit: 'Submit',
 	},
 	sk: {
 		title:'Komentovaný denný vývoj pandémie Covid-19',
@@ -46,6 +48,8 @@ var langs = {
 			democrat: 'Demokrati',
 		},
 		overlap: 'Povoliť prekrytie',
+		search: 'Hladať',
+		submit: 'Odoslať',
 	},
 	cz: {
 		title:'Komentovaný denní vývoj pandemie Covid-19',
@@ -70,5 +74,7 @@ var langs = {
 			democrat: 'Demokrati',
 		},
 		overlap: 'Povolit překrytí',
+		search: 'Hledat',
+		submit: 'Odeslat',
 	}
 }
