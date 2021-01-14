@@ -270,6 +270,13 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	
 	//scientist
 	{
+		name: 'Leis Buss, vedec skúmajúci druhú vlnu v prvej vlne úplne premorenej oblasti v Brazilii',
+		quote: 'Protilátky proti SARS-CoV-2 se rýchlo rozpadávajú niekoľko mesiacov po infekcii a v premorenom meste začala druhá vlna.',
+		date: '2020-09-27',
+		link: 'https://www.reuters.com/article/healthcoronavirus-brazil-manaus/in-brazils-amazon-a-covid-19-resurgence-dashes-herd-immunity-hopes-idUKL2N2GM0SC',
+		tag: ['scientist', 'druhavlna','bukovskyrelated']
+	},
+	{
 		name: 'Prof. MUDr. Vladimír Krčméry DrSc., infektológ',
 		quote: 'Koronavírus zvládneme. Už v máji sa vrátime k bežnému životu.',
 		date: '2020-03-18',
