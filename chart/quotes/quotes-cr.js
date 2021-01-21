@@ -1,4 +1,4 @@
-quotes['cr'] = [//poradi: polititian, doctor, scientist, publicist, other and bukovsky, bukovskyrelated, plosnetestovanie
+quotes['cr'] = [//poradi: polititian, doctor, scientist, publicist, other
 	{
 		name: 'Andrej Babiš, premiér ČR',
 		quote: 'Žádný chaos není. Lidé jsou už z roušek otrávení.',
@@ -179,13 +179,6 @@ quotes['cr'] = [//poradi: polititian, doctor, scientist, publicist, other and bu
 		tag: 'scientist'
 	},
 	{
-		name: 'Leis Buss, vědec skoumajíci druhou vlnu v Brazilské oblasti promořené v první vlně',
-		quote: 'Protilátky proti SARS-CoV-2 se rychle rozpadají několik měsíců po infekci',
-		date: '2020-09-27',
-		link: 'https://www.reuters.com/article/healthcoronavirus-brazil-manaus/in-brazils-amazon-a-covid-19-resurgence-dashes-herd-immunity-hopes-idUKL2N2GM0SC',
-		tag: 'scientist'
-	},
-	{
 		name: 'Prof. RNDr. Ladislav Dušek, Ph.D, statistik',
 		quote: 'Koronavirus si show už nezaslouží, citelně zeslábl, na koronavirus jsme ještě mnohem lépe připraveni, než jsme byli v březnu.',
 		date: '2020-08-26',
@@ -250,6 +243,13 @@ quotes['cr'] = [//poradi: polititian, doctor, scientist, publicist, other and bu
 	},
 	{
 		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
+		quote: 'Je to mediální virus. Vakcíny jsou jen byznys',
+		date: '2020-08-20',
+		link: 'https://www.idnes.cz/zpravy/domaci/tomas-zima-koronavirus-ockovani-vyvoj-byznys-rousky.A200819_195000_domaci_mama',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
 		quote: 'Vadí mi neustálé koronavirové strašení. Hlavně nepanikařit a vrátit život do normálních kolejí.',
 		date: '2020-08-24',
 		link: 'https://www.tomaszima.cz/media/vysoke-skolstvi/vadi-mi-neustale-koronavirove-straseni/',
@@ -257,7 +257,7 @@ quotes['cr'] = [//poradi: polititian, doctor, scientist, publicist, other and bu
 	},
 	{
 		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
-		quote: 'Onemocnění tak prodělalo asi čtyři až pět milionů obyvatel.',// [V realite 1-2 mil.]
+		quote: 'Onemocnění tak prodělalo asi čtyři až pět milionů obyvatel. [V reálu do listopadu ~1 mil.]',
 		date: '2020-11-24',
 		link: 'https://www.parlamentnilisty.cz/arena/rozhovory/Otevrit-vse-Profesor-Beran-Covid-melo-az-5-milionu-Cechu-Vakcina-Jinak-644998',
 		tag: 'scientist'
@@ -283,6 +283,14 @@ quotes['cr'] = [//poradi: polititian, doctor, scientist, publicist, other and bu
 		link: 'https://www.seznamzpravy.cz/clanek/rektor-zima-je-v-nemocnici-ma-problemy-s-dychanim-137714',
 		tag: 'scientist'
 	},
+		{
+		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
+		quote: '[Vo svojich 54 rokoch připojen na mimotělní okysličovnání krve ECMO. Neřekl nic, protože je v umělém spánku.]',
+		date: '2021-01-19',
+		link: 'https://www.idnes.cz/zpravy/domaci/koronavirus-v-cesku-rektor-uk-tomas-zima-vazny-stav-mimotelni-obeh-ecmo.A210119_125224_domaci_chtl',
+		tag: 'scientist'
+	},
+	
 	
 	//others
 	{
