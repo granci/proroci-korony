@@ -1,4 +1,4 @@
-quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and bukovsky, bukovskyrelated, plosnetestovanie
+quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and bukovsky, plosnetestovanie
 	{
 		name: 'Ľuboš Blaha, poslanec Smer',
 		quote: 'Matovič v mene koronavíru ešte dnes, keď už je jasné, že epidémia je preč, terorizuje Slovensko, straší ľudí...',
@@ -107,7 +107,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Vitamíny, stopové prvky a potraviny na rôznych úrovniach poskytujú nášmu organizmu ochranu pred vírusmi.',
 		date: '2020-02-17',
 		link: 'https://www.youtube.com/watch?v=yvuMU1fMWB0#t=528s',
-		tag: ['bukovsky', 'banasrelated']
+		tag: ['bukovsky', 'banas']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -128,7 +128,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'MUDr. Igor Bukovský, PhD., doporučujem Vám zmazať video nepodložené vedeckými argumentami.',//Vyplýva z 2 odstavca 2 strany otvoreného listu v linku.
 		date: '2020-03-25',
 		link: 'https://www.sks.sk/news/otvoreny-list-hlavneho-odbornika-mz-sr-pre-kardiologiu-mudr-i-bukovskemu-phd',
-		tag: ['bukovskyrelated']
+		tag: ['bukovsky']
 	},	
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -142,7 +142,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Po zhliadnuti 80 minút Vašej exhibície, kde sústavne zdôrazňujete Vašu zorientovanosť v svetovej odbornej literatúre, som v nej nenašiel jediný vedecký argument, ktorým viete Vaše teórie podložiť.',
 		date: '2020-03-27',
 		link: 'https://www.sks.sk/news/otvoreny-list-hlavneho-odbornika-mz-sr-pre-kardiologiu-mudr-i-bukovskemu-phd',
-		tag: ['bukovskyrelated']
+		tag: ['bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -156,7 +156,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Austrálski vedci z University of Melbourne zmapovali imunologické procesy v organizme mladej 47 ročnej ženy a pre náš organizmus je to chrípka, pretože mala teplotu iba 48,5C a vyliečila sa. To je fantastická správa. :-)',
 		date: '2020-03-30',
 		link: 'https://www.youtube.com/watch?v=_qUUOoDE_Jg#t=795s',
-		tag: ['bukovsky', 'banasrelated']
+		tag: ['bukovsky', 'banas']
 	},
 	
 	{
@@ -206,7 +206,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'V Česku máme velké riziko exponenciálního šíření.',
 		date: '2020-09-15',
 		link: 'https://www.blesk.cz/clanek/zpravy-koronavirus/655735/epidemie-nabira-na-sile-priznal-vojtech-a-pritvrdil-rousky-pri-vyuce-a-omezeni-hospod.html',
-		tag: ['bukovskyrelated', 'druhavlna']
+		tag: ['bukovsky', 'druhavlna']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -220,14 +220,14 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Bohužel jsme asi udělali chybu, že 1. července skončila povinnost nosit roušky.',
 		date: '2020-09-19',
 		link: 'https://www.denik.cz/z_domova/babis-koronavirus-krizovy-stab-opatreni-rousky.html',
-		tag: ['bukovskyrelated', 'druhavlna']
+		tag: ['bukovsky', 'druhavlna']
 	},
 	{
 		name: 'Leis Buss, vedec skúmajúci druhú vlnu v Brazílskej oblasti promorenej v prvej vlne',
 		quote: 'Protilátky proti SARS-CoV-2 sa rýchlo rozpadávajú niekoľko mesiacov po infekcii.',
 		date: '2020-09-27',
 		link: 'https://www.reuters.com/article/healthcoronavirus-brazil-manaus/in-brazils-amazon-a-covid-19-resurgence-dashes-herd-immunity-hopes-idUKL2N2GM0SC',
-		tag: ['bukovskyrelated']
+		tag: ['bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -262,7 +262,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Otče náš, takto sa cítim a prosím o silu! [NÁZOV VIDEA DEŇ PO HOSPITALIZÁCII "IMUNOLÓGA" BANÁŠA]',
 		date: '2020-12-23',
 		link: 'https://www.youtube.com/watch?v=rYZ7UwFV6xk',
-		tag: ['doctor', 'bukovsky', 'banasrelated']
+		tag: ['doctor', 'bukovsky', 'banas']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -276,7 +276,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Viaceré nemocnice potvrdili nákazu u svojich zamestnancov aj skôr, ako po troch mesiacoch.',
 		date: '2021-01-11',
 		link: 'https://dennikn.sk/2219275/zdravotnici-sa-opatovnie-nakazili-koronavirusom-niektori-skor-ako-po-troch-mesiacoch/',
-		tag: ['bukovskyrelated']
+		tag: ['bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -298,35 +298,35 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Potreba 14 dňovej karantény je jasná v prípadoch dokázaného testu na koronavírus. Urýchlime návrat do bežného života.',
 		date: '2020-05-06',
 		link: 'https://www.facebook.com/story.php?story_fbid=2720917151363780&id=100003365662613',//alebo https://m.facebook.com/story.php?story_fbid=4387439101282385&id=100000490166403 treba nájsť originál post, ak nie je len pre priateľov, alebo nie pre mňa. 
-		tag: ['doctor', 'fischer'],
+		tag: ['doctor'],
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Úmrtnosť na koronavírus 43 ľudí je smiešne nízka. Som za podstatne rýchlejšie ukončenie vírusovej karantény v Slovenskej republike.',
 		date: '2020-09-26',
 		link: 'https://www.facebook.com/story.php?story_fbid=172396421083132&id=100049383253623',
-		tag: ['doctor', 'fischer', 'druhavlna'],
+		tag: ['doctor', 'druhavlna'],
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Zrušte ďalšie reštrikčné opatrenia v súvislosti s koronavírom, ohrozuje zdravie ľudí viac, než samotný vírus.',
 		date: '2020-10-06',
 		link: 'https://www.facebook.com/viliam.fischer.501/posts/175008620821912',
-		tag: ['doctor', 'fischer', 'druhavlna'] 
+		tag: ['doctor', 'druhavlna'] 
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Na koronavírus zomrelo doteraz 90 ľudí. Je najvyšší čas prestať mrhať drahými PCR testami v neindikovaných prípadoch a prestať počítať pozitívne prípady bez klinického kontextu.',
 		date: '2020-10-22',
 		link: 'https://m.facebook.com/story.php?story_fbid=179374340385340&id=100049383253623',
-		tag: ['doctor', 'fischer']
+		tag: ['doctor']
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Na koronavírus zomrelo 200 ľudí. Peniaze na testovanie by sa zišli inde.',//existuje aj hejt testovania negujúci prvý výrok o jasnosti potreby karantény pre pozitívneho
 		date: '2020-10-29',
 		link: 'https://www.facebook.com/story.php?story_fbid=181414156848025&id=100049383253623',
-		tag: ['doctor', 'fischer', 'plosnetestovanie']
+		tag: ['doctor', 'plosnetestovanie']
 	},
 	
 	{
@@ -380,7 +380,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Druhá vlna nebude, za půl roku covid zmizí.',
 		date: '2020-06-03',
 		link: 'https://www.novinky.cz/koronavirus/clanek/pekova-druha-vlna-nebude-za-pul-roku-covid-zmizi-40326320',
-		tag: ['scientist',, 'druhavlna']
+		tag: ['scientist', 'druhavlna']
 	},
 	
 	{
