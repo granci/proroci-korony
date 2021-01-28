@@ -1,4 +1,4 @@
-quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and bukovsky, bukovskyrelated, plosnetestovanie
+quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and bukovsky, plosnetestovanie
 	{
 		name: 'Ľuboš Blaha, poslanec Smer',
 		quote: 'Matovič v mene koronavíru ešte dnes, keď už je jasné, že epidémia je preč, terorizuje Slovensko, straší ľudí...',
@@ -22,6 +22,13 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		tag: ['polititian', 'plosnetestovanie']//preferujem iba sk verziu v url namiesto area_testing
 	},
 	{
+		name: 'Peter Pellegríni, premiér SR',
+		quote: 'Vakcína proti ochoreniu COVID-19 by mala byť na Slovensku povinná aspoň pre najrizikovejšie skupiny.',
+		date: '2020-08-02',
+		link: 'https://domov.sme.sk/c/22459091/grendel-kyselicu-na-ministerstve-vnutra-nenahradi.html',
+		tag: ['polititian']
+	},
+	{
 		name: 'Peter Pellegríni, poslanec Hlas',
 		quote: 'Svojím rodičom by som testovanie [Antigénnymi testami infekčnosti] neodporučil.',
 		date: '2020-10-20',
@@ -31,8 +38,15 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	{
 		name: 'Peter Pellegríni, poslanec Hlas',
 		quote: 'Žiadam preto premiéra Matoviča, aby sa prestal hrať na sultána a neurčoval, čo bude otvorené a čo zatvorené, ale umožnil ľuďom slobodne žiť a dýchať.',
-		date: '2020-11130',
+		date: '2020-11-30',
 		link: 'https://www.omediach.com/tlacove-spravy/19371-pellegrini-ziadam-premiera-matovica-aby-zrusil-zakaz-zhromazdovania-a-otvoril-aj-ostatne-prevadzky',
+		tag: ['polititian']
+	},
+	{
+		name: 'Peter Pellegríni, poslanec Hlas',
+		quote: 'Zaočkovať sa nedám a ešte neviem, či to vôbec odporučím svojim rodičom.',
+		date: '2020-12-08',
+		link: 'https://www.trend.sk/nazory-a-komentare/pellegrini-je-kvoli-preferenciam-ochotny-hazardovat-ludskymi-zivotmi',
 		tag: ['polititian']
 	},
 	
@@ -93,7 +107,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Vitamíny, stopové prvky a potraviny na rôznych úrovniach poskytujú nášmu organizmu ochranu pred vírusmi.',
 		date: '2020-02-17',
 		link: 'https://www.youtube.com/watch?v=yvuMU1fMWB0#t=528s',
-		tag: ['bukovsky', 'banasrelated']
+		tag: ['bukovsky', 'banas']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -114,7 +128,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'MUDr. Igor Bukovský, PhD., doporučujem Vám zmazať video nepodložené vedeckými argumentami.',//Vyplýva z 2 odstavca 2 strany otvoreného listu v linku.
 		date: '2020-03-25',
 		link: 'https://www.sks.sk/news/otvoreny-list-hlavneho-odbornika-mz-sr-pre-kardiologiu-mudr-i-bukovskemu-phd',
-		tag: ['bukovskyrelated']
+		tag: ['bukovsky']
 	},	
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -128,7 +142,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Po zhliadnuti 80 minút Vašej exhibície, kde sústavne zdôrazňujete Vašu zorientovanosť v svetovej odbornej literatúre, som v nej nenašiel jediný vedecký argument, ktorým viete Vaše teórie podložiť.',
 		date: '2020-03-27',
 		link: 'https://www.sks.sk/news/otvoreny-list-hlavneho-odbornika-mz-sr-pre-kardiologiu-mudr-i-bukovskemu-phd',
-		tag: ['bukovskyrelated']
+		tag: ['bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -142,7 +156,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Austrálski vedci z University of Melbourne zmapovali imunologické procesy v organizme mladej 47 ročnej ženy a pre náš organizmus je to chrípka, pretože mala teplotu iba 48,5C a vyliečila sa. To je fantastická správa. :-)',
 		date: '2020-03-30',
 		link: 'https://www.youtube.com/watch?v=_qUUOoDE_Jg#t=795s',
-		tag: ['bukovsky', 'banasrelated']
+		tag: ['bukovsky', 'banas']
 	},
 	
 	{
@@ -151,6 +165,13 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		date: '2020-05-28',
 		link: 'https://www.youtube.com/watch?v=Q3xOV2-1DOY',
 		tag: ['doctor', 'bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Titul PhD. ma oprávňuje komunikovať medicínske témy verejnosti.',
+		date: '2020-06-11',
+		link: 'https://youtu.be/-uE5I-zNIGo?t=1178s',
+		tag: ['bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -185,14 +206,28 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'V Česku máme velké riziko exponenciálního šíření.',
 		date: '2020-09-15',
 		link: 'https://www.blesk.cz/clanek/zpravy-koronavirus/655735/epidemie-nabira-na-sile-priznal-vojtech-a-pritvrdil-rousky-pri-vyuce-a-omezeni-hospod.html',
-		tag: ['bukovskyrelated', 'druhavlna']
+		tag: ['bukovsky', 'druhavlna']
+	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Titul PhD. ma oprávňuje komunikovať medicínske témy verejnosti.',
+		date: '2020-09-16',
+		link: 'https://www.ta3.com/clanok/1192527/bukovsky-o-druhej-vlne-pandemie.html',
+		tag: ['bukovsky']
 	},
 	{
 		name: 'Andrej Babiš, predseda vlády ČR',
 		quote: 'Bohužel jsme asi udělali chybu, že 1. července skončila povinnost nosit roušky.',
 		date: '2020-09-19',
 		link: 'https://www.denik.cz/z_domova/babis-koronavirus-krizovy-stab-opatreni-rousky.html',
-		tag: ['bukovskyrelated', 'druhavlna']
+		tag: ['bukovsky', 'druhavlna']
+	},
+	{
+		name: 'Leis Buss, vedec skúmajúci druhú vlnu v Brazílskej oblasti promorenej v prvej vlne',
+		quote: 'Protilátky proti SARS-CoV-2 sa rýchlo rozpadávajú niekoľko mesiacov po infekcii.',
+		date: '2020-09-27',
+		link: 'https://www.reuters.com/article/healthcoronavirus-brazil-manaus/in-brazils-amazon-a-covid-19-resurgence-dashes-herd-immunity-hopes-idUKL2N2GM0SC',
+		tag: ['bukovsky']
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
@@ -210,46 +245,88 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Tieto videá majú formu politicko spoločenských komentárov.',
+		date: '2020-12-15',
+		link: 'https://youtu.be/iCL3x7f9_9Y?t=330s',
+		tag: ['bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Máme výborné čísla! [Po dvojdňovom poklese hospitalizovaných pri zachovanom počte pozitívnych.]',
+		date: '2020-12-21',
+		link: 'https://www.youtube.com/watch?v=C6gckYlwoxI&t=650s',
+		tag: ['doctor', 'bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
 		quote: 'Otče náš, takto sa cítim a prosím o silu! [NÁZOV VIDEA DEŇ PO HOSPITALIZÁCII "IMUNOLÓGA" BANÁŠA]',
 		date: '2020-12-23',
 		link: 'https://www.youtube.com/watch?v=rYZ7UwFV6xk',
-		tag: ['doctor', 'bukovsky', 'banasrelated']
+		tag: ['doctor', 'bukovsky', 'banas']
 	},
-	
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Vitamín D môže znížiť úmrtnosť o 20-90%. Je k tomu viac dôkazov, ako k lockdownu. [Lockdown v Číne zachránil 100% úmrtí!]',//V celej Číne by zomrelo napríklad 1% ľudí, čo je 14 mil. Tých všetkých Lockodwn Wuhanu/Wuhei zachránil.
+		date: '2020-12-30',
+		link: 'https://www.youtube.com/watch?v=WFcNTs152DM',
+		tag: ['doctor', 'bukovsky']
+	},
+	{
+		name: 'Veronika Folentová, DenníkN.sk',
+		quote: 'Viaceré nemocnice potvrdili nákazu u svojich zamestnancov aj skôr, ako po troch mesiacoch.',
+		date: '2021-01-11',
+		link: 'https://dennikn.sk/2219275/zdravotnici-sa-opatovnie-nakazili-koronavirusom-niektori-skor-ako-po-troch-mesiacoch/',
+		tag: ['bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Imunita funguje najmenej 8 mesiacov. [Potvrdenie o imunite sa dáva na 3.]',
+		date: '2021-01-15',
+		link: 'https://www.youtube.com/watch?v=NGjJ5fQtPhQ#t=2150s',
+		tag: ['bukovsky']
+	},
+	{
+		name: 'MUDr. Igor Bukovský PhD., dietológ',
+		quote: 'Keď som v decembri povedal \'Máme výborné čísla\', myslel som oproti predpovedi IZP o 10 tis. mŕtvych. [Oproti predpovedi pred zavedením rúšok a 2 sprísneniami opratrení.]',
+		date: '2021-01-19',
+		link: 'https://www.youtube.com/watch?v=R3d4CRSSwaE#t=2328s',
+		tag: ['bukovsky']
+	},
+
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Potreba 14 dňovej karantény je jasná v prípadoch dokázaného testu na koronavírus. Urýchlime návrat do bežného života.',
 		date: '2020-05-06',
 		link: 'https://www.facebook.com/story.php?story_fbid=2720917151363780&id=100003365662613',//alebo https://m.facebook.com/story.php?story_fbid=4387439101282385&id=100000490166403 treba nájsť originál post, ak nie je len pre priateľov, alebo nie pre mňa. 
-		tag: ['doctor', 'fischer'],
+		tag: ['doctor'],
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Úmrtnosť na koronavírus 43 ľudí je smiešne nízka. Som za podstatne rýchlejšie ukončenie vírusovej karantény v Slovenskej republike.',
 		date: '2020-09-26',
 		link: 'https://www.facebook.com/story.php?story_fbid=172396421083132&id=100049383253623',
-		tag: ['doctor', 'fischer', 'druhavlna'],
+		tag: ['doctor', 'druhavlna'],
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Zrušte ďalšie reštrikčné opatrenia v súvislosti s koronavírom, ohrozuje zdravie ľudí viac, než samotný vírus.',
 		date: '2020-10-06',
 		link: 'https://www.facebook.com/viliam.fischer.501/posts/175008620821912',
-		tag: ['doctor', 'fischer', 'druhavlna'] 
+		tag: ['doctor', 'druhavlna'] 
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Na koronavírus zomrelo doteraz 90 ľudí. Je najvyšší čas prestať mrhať drahými PCR testami v neindikovaných prípadoch a prestať počítať pozitívne prípady bez klinického kontextu.',
 		date: '2020-10-22',
 		link: 'https://m.facebook.com/story.php?story_fbid=179374340385340&id=100049383253623',
-		tag: ['doctor', 'fischer']
+		tag: ['doctor']
 	},
 	{
 		name: 'Prof. MUDr. Viliam Fischer CSc., kardiológ',
 		quote: 'Na koronavírus zomrelo 200 ľudí. Peniaze na testovanie by sa zišli inde.',//existuje aj hejt testovania negujúci prvý výrok o jasnosti potreby karantény pre pozitívneho
 		date: '2020-10-29',
 		link: 'https://www.facebook.com/story.php?story_fbid=181414156848025&id=100049383253623',
-		tag: ['doctor', 'fischer', 'plosnetestovanie']
+		tag: ['doctor', 'plosnetestovanie']
 	},
 	
 	{
@@ -303,7 +380,7 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		quote: 'Druhá vlna nebude, za půl roku covid zmizí.',
 		date: '2020-06-03',
 		link: 'https://www.novinky.cz/koronavirus/clanek/pekova-druha-vlna-nebude-za-pul-roku-covid-zmizi-40326320',
-		tag: ['scientist',, 'druhavlna']
+		tag: ['scientist', 'druhavlna']
 	},
 	
 	{
@@ -378,6 +455,41 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 		date: '2020-12-23',
 		link: 'https://www.omediach.com/hoaxy/19609-banas-z-nemocnice-nahral-video-v-ktorom-tvrdi-ze-on-kovid-nikdy-nespochybnoval-video',
 		tag: ['publicist', 'banas', 'plosnetestovanie']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: '[Z NEMOCNICE]Nikdy som Covid nespochybňoval.',
+		date: '2020-12-23',
+		link: 'https://www.omediach.com/hoaxy/19609-banas-z-nemocnice-nahral-video-v-ktorom-tvrdi-ze-on-kovid-nikdy-nespochybnoval-video',
+		tag: ['publicist', 'banas', 'plosnetestovanie']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: 'Som doma po zvláštnom zážitku. Prestal som sa báť.[Po pobyte aj na pľúcnej ventilácii a informácii od lekárov, že má protilátky].',
+		date: '2021-12-30',
+		link: 'https://www.omediach.com/hoaxy/19666-banas-po-ochoreni-covid-19-som-doma-po-zvlastnom-zazitku-video',
+		tag: ['publicist', 'banas']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: 'Dnes už viem, že som to zľahčoval! S tým COVID-19 to nie je také jednoduché, ako som si myslel.',
+		date: '2021-01-11',
+		link: 'https://www.facebook.com/banas.jozo/posts/3503194913126382',
+		tag: ['publicist', 'banas']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: 'Naozaj, prekvapujúco rýchlo sa unavím, nastal prudký pokles fyzickej výkonnosti,... Riziko však spočíva v tom, že keď nebezpečenstvo pominie a človek sa vráti do normálu, začne byť nevďačný tak, ako bol dovtedy.',
+		date: '2021-01-14',
+		link: 'https://www.facebook.com/banas.jozo/posts/3511196592326214',
+		tag: ['publicist', 'banas']
+	},
+	{
+		name: 'Jozef Banáš, publicista',
+		quote: 'Som presvedčený, že budovanie prirodzenej imunity správnou životosprávou je zmysluplnejšie ako očkovanie.',
+		date: '2021-01-18',
+		link: 'https://www.facebook.com/banas.jozo/posts/3522033747909165',
+		tag: ['publicist', 'banas']
 	},
 	
 	{
