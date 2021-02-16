@@ -133,6 +133,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var overlap = (queryParams.overlap === 'false') ? false : true;
 
   $.get(countryDefs[country].csv, function(csvData) {
+    if(lang=='cs'){
+      Highcharts.setOptions({
+        lang: {
+            shortMonths: [
+                'Led', 'Uno', 'Bře', 'Dub', 'Kvě', 'Čvn', 'Čvc', 'Srp', 'Zář', 'Řij', 'Lis', 'Pro'
+            ]}
+      })
+    }
 
     var parsedCsv = parseCsv(csvData, countryDefs[country].delimiter);
     var dailyCsv = addDaily(parsedCsv);
