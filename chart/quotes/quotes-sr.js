@@ -15,6 +15,42 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	},
 	
 	{
+		name: 'Robert Fico, poslanec Smer',
+		quote: 'Toto je hrozné. To je.. Ako takí debili musíme nosiť rúška.',
+		date: '2020-04-30',
+		link: 'https://refresher.sk/84048-Fico-zabudol-ze-su-zapnute-mikrofony-Musime-nosit-ruska-ako-taki-debili-povedal-Matovica-oznacil-za-premiera-ciganov',
+		tag: 'polititian'
+	},
+	{
+		name: 'Robert Fico, poslanec Smer',
+		quote: 'Za pandémiou stoja ekonomické záujmy, že celá pandémia "je podozrivá".',
+		date: '2020-08-06',
+		link: 'https://slovensko.hnonline.sk/2191049-fico-pre-hnteleviziu-tato-pandemia-je-podozriva-ako-premier-som-videl-ako-sli-miliardy-pre-farmafirmy',
+		tag: 'polititian'
+	},
+	{
+		name: 'Robert Fico, poslanec Smer',
+		quote: 'Obyčajná chrípka zabije viac ľudí ako koronavírus.',
+		date: '2020-09-17',
+		link: 'https://www.aktuality.sk/clanok/822883/popieraci-korony-kotlebovci-aj-fico-hovoria-nezmysly-podcast/',
+		tag: 'polititian'
+	},
+	{
+		name: 'Robert Fico, poslanec Smer',
+		quote: 'Uvedomme si prosím, že demokracia je niečo, čo má svoje pravidlá. Demokracia nemôže byť anarchia. Keby dnes platili pravidlá... [Na nezákonnom zhromaždení viac, ako 6 osôb v čase núdzového stavu z dôvodu protiepidemických opatrení]',
+		date: '2020-11-17',
+		link: 'https://www.youtube.com/watch?v=vovNLXAhOgU&t=270',
+		tag: 'polititian'
+	},
+	{
+		name: 'Robert Fico, poslanec Smer',
+		quote: 'Očkovanie je len "biznis farmafiriem" a on si nedá pichať nejakú "chémiu".',
+		date: '2021-03-20',
+		link: 'https://dennikn.sk/2320071/kym-fico-s-blahom-spochybnuju-ockovanie-ich-zupan-baska-spustil-velke-vakcinacne-centrum/',
+		tag: 'polititian'
+	},
+	
+	{
 		name: 'Peter Pellegríni, premiér SR',
 		quote: 'Akonáhle sa začne vírus šíriť nekontrolovane, vtedy budeme musieť pristúpiť k plošnému testovaniu. Objednávame rýchlotesty. [Kičurove testy protilátok - nevhodnné na plošné testovanie]',
 		date: '2020-03-12',
