@@ -280,13 +280,6 @@ quotes['sr'] = [//poradie: polititian, doctor, scientist, publicist, other and b
 	},
 	{
 		name: 'MUDr. Igor Bukovský PhD., dietológ',
-		quote: 'Imunita funguje najmenej 8 mesiacov. [Potvrdenie o imunite sa dáva na 3.]',
-		date: '2021-01-15',
-		link: 'https://www.youtube.com/watch?v=NGjJ5fQtPhQ#t=2150s',
-		tag: ['bukovsky']
-	},
-	{
-		name: 'MUDr. Igor Bukovský PhD., dietológ',
 		quote: 'Keď som v decembri povedal \'Máme výborné čísla\', myslel som oproti predpovedi IZP o 10 tis. mŕtvych. [Oproti predpovedi pred zavedením rúšok a 2 sprísneniami opratrení.]',
 		date: '2021-01-19',
 		link: 'https://www.youtube.com/watch?v=R3d4CRSSwaE#t=2328s',
