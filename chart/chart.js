@@ -250,8 +250,8 @@ document.addEventListener('DOMContentLoaded', function () {
   function adjustCsvArr(csvArr, country, lang) {
     var skipColumns = [1, 2];
     var columns = {
-      cases: { sr: 5, cr: 5, us: 3 },
-      daths: { sr: 6, cr: 3, us: 2 }
+      cases: { sr: 3, cr: 5, us: 3 },
+      daths: { sr: 4, cr: 3, us: 2 }
     }
     var filtered = csvArr.map(x => x.filter((y, i, arr) => (i === 0 || i === columns.cases[country] || i === columns.daths[country])));
     if (country === 'sr') filtered = filtered.map(x => ([x[0], x[1], x[2]] = [x[0], x[2], x[1]]));
