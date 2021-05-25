@@ -283,11 +283,32 @@ quotes['cr'] = [//poradi: polititian, doctor, scientist, publicist, other
 		link: 'https://www.seznamzpravy.cz/clanek/rektor-zima-je-v-nemocnici-ma-problemy-s-dychanim-137714',
 		tag: 'scientist'
 	},
-		{
+	{
 		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
 		quote: '[Vo svojich 54 rokoch připojen na mimotělní okysličovnání krve ECMO. Neřekl nic, protože je v umělém spánku.]',
 		date: '2021-01-19',
 		link: 'https://www.idnes.cz/zpravy/domaci/koronavirus-v-cesku-rektor-uk-tomas-zima-vazny-stav-mimotelni-obeh-ecmo.A210119_125224_domaci_chtl',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
+		quote: '[Po 36 dnech propušťen z nemocnice.]',
+		date: '2021-02-19',
+		link: 'https://denikn.cz/minuta/566418/',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
+		quote: 'Já jsem toto onemocnění za chřipečku nikdy nepovažoval a nepodceňoval... Vždy jsem zmiňoval nutnost tří „R“, podporoval jsem a podporuji očkování... Já jsem apeloval a stále apeluji na to, aby se očkovalo, ... Navíc pomůže očkování, které musí co nejrychleji být realizované u maximálního počtu lidí. [Viď 20.8.2020]',
+		date: '2021-02-26',
+		link: 'https://www.novinky.cz/koronavirus/clanek/rektor-uk-zima-zazil-jsem-covid-na-vlastni-kuzi-chripecka-to-opravdu-neni-40352273',
+		tag: 'scientist'
+	},
+	{
+		name: 'Prof. MUDr. Tomáš Zima, DrSc., rektor UK',
+		quote: 'Jestli se chceme utestovat, tak je dobré, že budeme testovat z pojišŤení. ... Za prvních 5 měsícú jsme protestovali 8 miliard, co je provoz velké fakultní nemocnice na 10 měsícú. [Redaktor: 1 den lockdownu z přelomu zimy a jara nás stál 2 miliardy korun. (17 minuta rozhovoru.)]',
+		date: '2021-05-24',
+		link: 'https://video.aktualne.cz/dvtv/zive-probiha-v-cesku-valka-vedcu-a-zmenil-nazor-na-covid-rek/r~38858a9abcb911eb8e470cc47ab5f122/',
 		tag: 'scientist'
 	},
 	
